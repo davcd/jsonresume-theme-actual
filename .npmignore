@@ -1,0 +1,7 @@
+.idea/
+.DS_Store
+node_modules/
+public/
+test/
+npm-debug.log
+resume.json

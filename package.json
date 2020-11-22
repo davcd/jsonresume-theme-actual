@@ -1,0 +1,30 @@
+{
+  "name": "jsonresume-theme-actual",
+  "version": "0.0.1",
+  "description": "Actual theme for JSON Resume",
+  "author": "David Carvajal",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davcd/jsonresume-theme-actual"
+  },
+  "scripts": {
+    "create-html": "resume export public/resume.html --format html --schema schema.json --theme .",
+    "create-pdf": "resume export public/resume.pdf --format pdf --schema schema.json --theme .",
+    "validate": "resume test --schema schema.json",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:sync": "node ./test/browser-sync"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.29.1",
+    "node-sass": "^5.0.0",
+    "pug": "^3.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "jest": "^26.6.3",
+    "jsonschema": "^1.4.0",
+    "resume-cli": "^2.2.1"
+  }
+}

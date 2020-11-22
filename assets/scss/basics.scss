@@ -1,0 +1,48 @@
+.basics {
+  width: 100%;
+  height: $header-height;
+  display: table;
+  padding:10px 0;
+  border-bottom: 2px solid $separator-color;
+}
+
+.left {
+  display: table-cell;
+  vertical-align: middle;
+  horiz-align: left;
+  width: $main-content-percentage;
+
+  .name {
+    font-size: $name-font-size;
+    font-weight: bold;
+    display: block;
+    margin-left: -$name-font-size*0.07;
+  }
+
+  .label {
+    font-size: $line-font-size;
+    font-weight: lighter;
+    display: block;
+    margin-left: -$line-font-size*0.04;
+  }
+
+}
+
+.right {
+  display: table-cell;
+  vertical-align: middle;
+  horiz-align: right;
+  width: $side-content-percentage;
+
+  ul {
+    font-size: $contact-font-size;
+    font-weight: normal;
+    list-style-type: none;
+
+    li {
+      margin: $contact-font-size*0.3 0;
+      text-align: right;
+    }
+
+  }
+}
