@@ -24,7 +24,6 @@
   "devDependencies": {
     "browser-sync": "^2.26.13",
     "jest": "^26.6.3",
-    "jsonschema": "^1.4.0",
-    "resume-cli": "^2.2.1"
+    "jsonschema": "^1.4.0"
   }
 }
