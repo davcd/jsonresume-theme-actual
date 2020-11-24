@@ -1,11 +1,11 @@
 const pug = require("pug");
 const sass = require('node-sass');
-const moment = require('moment');
+const helper = require('./assets/helper');
 
 const render = (resume) => pug.renderFile('./assets/template.pug', {
     resume,
     styles: renderStyles(),
-    moment
+    helper
 })
 
 const renderStyles = () => sass.renderSync({
