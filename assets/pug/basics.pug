@@ -1,9 +1,13 @@
 div(class='basics')
-    div(class='left')
-        span(class='name') #{resume.basics.name}
-        span(class='label') #{resume.basics.label}
-    div(class='right')
-        ul
-            li #{resume.basics.phone}
-            li #{resume.basics.email}
-            li #{resume.basics.location.region}
+    div(class='header')
+        div(class='left')
+            span(class='name')=resume.basics.name
+            span(class='label')=resume.basics.label
+        div(class='right')
+            ul(class='contact')
+                li=resume.basics.phone
+                li=resume.basics.email
+                li=helper.calcLocation(resume.basics.location)
+    if resume.basics.summary
+        hr(class='separator')
+        div(class='summary') !{helper.mdToHtml(resume.basics.summary)}

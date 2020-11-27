@@ -1,10 +1,17 @@
-$text-color: #222222;
-$separator-color: #efefef;
+$content-width: 1000px;
+$content-main-percentage: 70%;
+$content-side-percentage: 100%-$content-main-percentage;
 
-$main-content-percentage: 70%;
-$side-content-percentage: 100%-$main-content-percentage;
+$default-space: 20px;
+$text-color: #222222;
 
 $header-height: 100px;
-$name-font-size: 80px;
-$line-font-size: 40px;
-$contact-font-size: 18px;
+$header-name-font-size: 80px;
+$header-line-font-size: 40px;
+$header-contact-font-size: 18px;
+
+$separator-color: #efefef;
+$separator-width: 900px;
+$separator-height: 1px;
+
+$summary-font-size: 16px;

@@ -6,10 +6,18 @@
 }
 
 .content {
-  width: 1000px;
+  width: $content-width;
   height: auto;
   padding: 0 50px;
   margin: 0 auto;
   font-family: Helvetica, Arial, sans-serif;
   color: $text-color;
+}
+
+.separator {
+  display: block;
+  background-color: $separator-color;
+  width: $separator-width;
+  height: $separator-height;
+  margin: 0 auto;
 }
