@@ -79,13 +79,13 @@ describe('calcLocation function', () => {
         expect(helper.calcLocation(location)).toBe('Santander, Cantabria')
     })
 
-    test('given city, region then countryCode return cuty, region, country', () => {
+    test('given city, region then countryCode return cuty, region, countryCode', () => {
         const location = {
             "city": "Santander",
             "countryCode": "ES",
             "region": "Cantabria"
         }
-        expect(helper.calcLocation(location)).toBe('Santander, Cantabria, Spain')
+        expect(helper.calcLocation(location)).toBe('Santander, Cantabria, ES')
     })
 
 })

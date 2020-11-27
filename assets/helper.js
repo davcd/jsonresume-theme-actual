@@ -16,7 +16,7 @@ const calcLocation = (location) => {
 
     if (location.countryCode) {
         const country = iso.whereAlpha2(location.countryCode)
-        array.push(country ? country.country : location.countryCode)
+        array.push(country && array.length<2 ? country.country : location.countryCode)
     }
 
     return array.length > 0 ? array.join(', ') : null
