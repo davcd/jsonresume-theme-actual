@@ -7,6 +7,7 @@ Minimalist and modern theme for [JSON Resume](https://jsonresume.org/) standard,
 ## Table of contents
 
 - [What is JSON Resume?](#what-is-json-resume)
+- [Prerequisites](#prerequisites)
 - [Export resume](#export-resume)
 - [Contribute](#contribute)
 - [Support](#support)
@@ -15,54 +16,24 @@ Minimalist and modern theme for [JSON Resume](https://jsonresume.org/) standard,
 
 > JSON Resume is a community driven open source initiative to create JSON-based standard for resumes.
 
-## Export resume
+## Prerequisites
 
-1. Install [resume-cli](https://github.com/jsonresume/resume-cli/)
+[node.js](https://nodejs.org/en/) runtime with [resume-cli](https://github.com/jsonresume/resume-cli/)
 ```bash
 npm install -g resume-cli
 ```
 
-2. Clone this git repository
-```bash
-git clone https://github.com/davcd/jsonresume-theme-actual.git
-cd jsonresume-theme-actual
-```
-
-3. Install non-dev dependencies
-```bash
-npm install --production
-```
-
-4. Replace the resume.json file with your own (you can follow the [v1.0.0 version](https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json)) 
-
-5. Export your resume as .pdf / .html
-```bash
-npm run export-html
-npm run export-pdf
-```
-
-You can find the output files at the `public` folder
+## Export resume
+Work in progress
 
 ## Contribute
 
-1. Install [resume-cli](https://github.com/jsonresume/resume-cli/)
 ```bash
-npm install -g resume-cli
-```
-
-2. Clone this git repository
-```bash
-git clone https://github.com/davcd/jsonresume-theme-actual.git
+git clone git@github.com:davcd/jsonresume-theme-actual.git
 cd jsonresume-theme-actual
-```
 
-3. Install all dependencies
-```bash
 npm install
-```
 
-4. Run browser-sync for easy live editing
-```bash
 npm run test:sync
 ```
 
@@ -80,23 +51,18 @@ This theme supports the following JSON paths
     "label": "Programmer",
     "email": "richard.hendriks@mail.com",
     "phone": "(912) 555-4321",
-    "url": "http://richardhendricks.example.com/",
     "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
     "location": {
+      "city": "Los Angeles",
       "countryCode": "US",
       "region": "California"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "url": "https://twitter.example.com/richardhendriks"
-      }
-    ]
+    }    
   }
 }
 ```
 
 - `resume.basics.name` and `resume.basics.label` are mandatory fields
+- `resume.basics.summary` supports markdown
 
 ### Work In Progress
 Pending to support `resume.work`, `resume.projects`, `resume.education`, `resume.skills`, `resume.certificates`, ... among others.
