@@ -1,24 +1,25 @@
 const md = require('markdown-it')();
+const iso = require('iso-3166-1');
 
 const mdToHtml = (string) => md.render(string)
 
 const calcLocation = (location) => {
-    if (location.countryCode) {
-        if (location.region) {
-            return `${location.region}, ${location.countryCode}`
-        } else if (location.city) {
-            return `${location.city}, ${location.countryCode}`
-        }
-        return location.countryCode
-    } else if (location.region) {
-        if (location.city) {
-            return `${location.city}, ${location.region}`
-        }
-        return location.region
-    } else if (location.city) {
-        return location.city
+    let array = []
+
+    if (location.city) {
+        array.push(location.city)
     }
-    return null
+
+    if (location.region) {
+        array.push(location.region)
+    }
+
+    if (location.countryCode) {
+        const country = iso.whereAlpha2(location.countryCode)
+        array.push(country ? country.country : location.countryCode)
+    }
+
+    return array.length > 0 ? array.join(', ') : null
 }
 
 module.exports = {
