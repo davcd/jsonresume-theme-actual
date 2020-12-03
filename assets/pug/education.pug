@@ -1,0 +1,9 @@
+if helper.validArray(resume.education)
+    div(class='education margin-container-4')
+        p(class='section-title') Education
+        div(class='container')
+            each edu in resume.education
+                div(class='article margin-container-2')
+                    div(class='title markdown') !{helper.mdToHtml(helper.beautifyArray(', ', [edu.studyType, edu.area]))}
+                    span(class='institution margin-text-1')
+                        a(href=edu.url)=edu.institution

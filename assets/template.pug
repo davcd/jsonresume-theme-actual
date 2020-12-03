@@ -3,7 +3,18 @@ html(lang="en")
     head
         meta(charset="utf-8")
         style(type='text/css') !{styles}
-        title Min theme for JSON Resume
+        title Actual theme for JSON Resume
     body
         div(class='content')
             include pug/basics
+            hr(class='separator')
+            div(class='table')
+                div(class='main')
+                    include pug/work
+                div(class='side')
+                    include pug/skills
+                    include pug/education
+                    include pug/certificates
+                    include pug/languages
+                    include pug/links
+            hr(class='separator')

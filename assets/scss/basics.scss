@@ -1,54 +1,43 @@
 .basics {
 
-  .header {
-    width: 100%;
-    height: $header-height;
-    display: table;
-    padding: $default-space 0;
+  .main {
+    vertical-align: middle;
 
-    .left {
-      display: table-cell;
-      vertical-align: middle;
-      horiz-align: left;
-      width: $content-main-percentage;
-
-      .name {
-        font-size: $header-name-font-size;
-        font-weight: bold;
-        display: block;
-        margin-left: -$header-name-font-size*0.07;
-      }
-
-      .label {
-        font-size: $header-line-font-size;
-        font-weight: lighter;
-        display: block;
-        margin-left: -$header-line-font-size*0.04;
-      }
+    .name {
+      font-size: $header-name-font-size;
+      line-height: 1em;
+      font-weight: bold;
+      display: block;
+      margin-left: -$header-name-font-size*0.07;
     }
 
-    .right {
-      display: table-cell;
-      vertical-align: middle;
-      horiz-align: right;
-      width: $content-side-percentage;
+    .label {
+      font-size: $header-line-font-size;
+      line-height: 1em;
+      font-weight: lighter;
+      display: block;
+      margin-left: -$header-line-font-size*0.04;
+    }
+  }
 
-      ul.contact {
-        font-size: $header-contact-font-size;
-        font-weight: normal;
-        list-style-type: none;
+  .side {
+    vertical-align: middle;
+    padding-left: 0;
+    padding-top: 15px;
 
-        li {
-          margin: $header-contact-font-size*0.3 0;
-          text-align: right;
-        }
+    .contact {
+      font-size: $header-contact-font-size;
+      list-style-type: none;
+
+      li {
+        line-height: 1.5em;
       }
     }
   }
 
+
   .summary {
     font-size: $summary-font-size;
-    padding: $default-space 0;
-    font-weight: normal;
+    padding: $space-2 0;
   }
 }

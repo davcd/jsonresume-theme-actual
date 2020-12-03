@@ -1,18 +1,42 @@
 $content-width: 1000px;
 $content-main-percentage: 70%;
-$content-side-percentage: 100%-$content-main-percentage;
+$content-side-percentage: 100% - $content-main-percentage;
 
-$default-space: 20px;
+$space-1: 10px;
+$space-2: 20px;
+$space-3: 30px;
+$space-4: 50px;
+
 $text-color: #222222;
-$markdown-space: 30px;
+$section-title-font-size: 32px;
 
-$header-height: 100px;
 $header-name-font-size: 80px;
 $header-line-font-size: 40px;
 $header-contact-font-size: 18px;
 
 $separator-color: #efefef;
-$separator-width: 900px;
+$separator-width: 90%;
 $separator-height: 1px;
 
 $summary-font-size: 16px;
+
+$work-position-font-size: 18px;
+$work-dates-font-size: 14px;
+$work-company-location-font-size: 14px;
+$work-summary-font-size: 16px;
+$work-highlights-font-size: 14px;
+$work-highlights-column-width: ($content-width * ($content-main-percentage / 100%) - 4 * $space-1) / 2;
+
+$skills-groups-font-size: 18px;
+$skills-keywords-font-size: 14px;
+$skills-column-width: ($content-width * ($content-side-percentage / 100%) - 2 * $space-1) / 2;
+
+$education-area-font-size: 14px;
+$education-institution-font-size: 16px;
+
+$certificates-name-font-size: 14px;
+$certificates-issuer-font-size: 16px;
+
+$links-font-size: 14px;
+
+$languages-font-size: 14px;

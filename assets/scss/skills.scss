@@ -1,0 +1,29 @@
+.skills {
+
+  .container {
+    display: inline-block;
+    columns: 2;
+    column-gap: $space-1;
+
+    .article {
+      break-inside: avoid-column;
+      width: $skills-column-width;
+      margin-top: $space-2;
+
+      span {
+        display: block;
+        font-size: $skills-groups-font-size;
+        font-weight: lighter;
+      }
+
+      li {
+        font-size: $skills-keywords-font-size;
+        list-style: none;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}

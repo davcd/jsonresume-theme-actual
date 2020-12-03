@@ -1,13 +1,13 @@
 div(class='basics')
-    div(class='header')
-        div(class='left')
+    div(class='table')
+        div(class='main')
             span(class='name')=resume.basics.name
             span(class='label')=resume.basics.label
-        div(class='right')
+        div(class='side')
             ul(class='contact')
                 li=resume.basics.phone
                 li=resume.basics.email
-                li=helper.calcLocation(resume.basics.location)
+                li(class='margin-text-3')=helper.calcLocation(resume.basics.location)
     if resume.basics.summary
         hr(class='separator')
         div(class='summary markdown') !{helper.mdToHtml(resume.basics.summary)}
