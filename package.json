@@ -8,9 +8,9 @@
     "url": "https://github.com/davcd/jsonresume-theme-actual"
   },
   "scripts": {
-    "create-html": "resume export public/resume.html --format html --schema schema.json --theme .",
-    "create-pdf": "resume export public/resume.pdf --format pdf --schema schema.json --theme .",
-    "validate": "resume test --schema schema.json",
+    "create-html": "resume export public/resume.html --format html --theme .",
+    "create-pdf": "resume export public/resume.pdf --format pdf --theme .",
+    "validate": "resume test",
     "test": "jest",
     "test:watch": "jest --watchAll",
     "test:sync": "node ./test/browser-sync"
