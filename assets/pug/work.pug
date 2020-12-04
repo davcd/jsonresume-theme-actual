@@ -14,7 +14,7 @@ if helper.validArray(resume.work)
                                 | #{work.location}
                         div(class='right')
                             span(class='dates')=helper.calcDateRange(work.startDate, work.endDate)
-                    div(class='summary markdown') !{helper.mdToHtml(work.summary)}
+                    div(class='summary markdown')!=helper.mdToHtml(work.summary)
                     if helper.validArray(work.highlights)
                         ul(class='highlights')
                             each highlight in work.highlights

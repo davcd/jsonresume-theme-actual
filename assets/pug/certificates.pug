@@ -5,5 +5,5 @@ if helper.validArray(resume.certificates)
             each certificate in resume.certificates
                 div(class='article margin-container-2')
                     div(class='name markdown')
-                        a(href=certificate.url) !{helper.mdToHtml(certificate.name)}
+                        a(href=certificate.url)!=helper.mdToHtml(certificate.name)
                     span(class='issuer margin-text-1')=certificate.issuer

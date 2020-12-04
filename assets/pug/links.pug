@@ -5,7 +5,7 @@ if helper.validArray(resume.basics.profiles) || resume.basics.url
             ul
                 if resume.basics.url
                     li(class='article')
-                        a(href=resume.basics.url) !{helper.beautifyLink(resume.basics.url)}
+                        a(href=resume.basics.url)!=helper.beautifyLink(resume.basics.url)
                 each profile in resume.basics.profiles
                     li(class='article margin-text-2')
-                        a(href=profile.url) !{helper.beautifyLink(profile.url)}
+                        a(href=profile.url)!=helper.beautifyLink(profile.url)

@@ -4,4 +4,4 @@ if helper.validArray(resume.languages)
         div(class='container')
             ul
                 each language in resume.languages
-                    li(class='article margin-text-2') !{helper.mdToHtml(helper.beautifyArray(' · ', [language.language, language.fluency]))}
+                    li(class='article margin-text-2')!=helper.mdToHtml(helper.beautifyArray(' · ', [language.language, language.fluency]))
