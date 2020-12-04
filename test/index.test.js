@@ -3,10 +3,6 @@ const {HtmlValidate} = require('html-validate')
 const index = require('../index')
 const resume = require('../resume.json')
 
-test('renderStyles function return css string', () => {
-    expect(typeof index.renderStyles()).toBe("string")
-})
-
 describe('render function', () => {
 
     test('given no param then throw TypeError', () => {

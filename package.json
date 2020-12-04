@@ -20,7 +20,6 @@
     "iso-3166-1": "^2.0.1",
     "markdown-it": "^12.0.2",
     "moment": "^2.29.1",
-    "node-sass": "^5.0.0",
     "pug": "^3.0.0"
   },
   "devDependencies": {
