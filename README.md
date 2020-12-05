@@ -3,9 +3,7 @@
 Minimalist and modern theme for [JSON Resume](https://jsonresume.org/) standard, designed for
 the [v1.0.0 version](https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json).
 
-[PDF export example ](docs/resume.pdf)
-
-[HTML export example ](docs/resume.html)
+[Export example](docs/resume.pdf)
 
 ## Table of contents
 
