@@ -2,157 +2,164 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Richard Hendriks",
-    "label": "Programmer",
-    "email": "richard.hendriks@mail.com",
+    "label": "Software Developer",
+    "email": "rhendriks@mail.com",
     "phone": "(912) 555-4321",
-    "url": "http://richardhendricks.example.com/",
-    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
+    "url": "http://richardh.example.com",
+    "summary": "Richard hails from [tulsa](https://en.wikipedia.org/wiki/Tulsa,_Oklahoma). Holds a bachelor's degree from the *University of Oklahoma* and a master's degree from *Stanford University*. (Go Sooners) Before starting **Pied Piper**, he worked for **Hooli** as a part time software developer. While his work focuses on *applied information theory*, mostly *optimizing lossless compression* schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from *quantum computing* to *chaos theory*. He could tell you about it, but THAT would NOT be a *length-limited* conversation!",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
       "city": "San Francisco",
       "countryCode": "US",
       "region": "California"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "neutralthoughts"
+        "url": "https://gitplace.com/rhendricks"
       },
       {
-        "network": "SoundCloud",
-        "username": "dandymusicnl",
-        "url": "https://soundcloud.example.com/dandymusicnl"
+        "url": "https://linkedon.com/richardh"
       }
     ]
   },
   "work": [
     {
-      "name": "Pied Piper",
-      "location": "Palo Alto, CA",
-      "description": "Awesome compression company",
-      "position": "CEO/President",
-      "url": "http://piedpiper.example.com",
-      "startDate": "2013-12-01",
-      "endDate": "2014-12-01",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "name": "Facebook",
+      "location": "California, United States",
+      "position": "Principal Software Engineer",
+      "url": "http://facebook.com",
+      "startDate": "2016-11-17",
+      "summary": "*Facebook* is an American social media conglomerate corporation based in *Menlo Park, California*. It was founded by **Mark Zuckerberg**, along with his fellow roommates and students at Harvard College, who were Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes, originally as TheFacebook.com—today's Facebook, a popular global social networking website",
       "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
+        "Vitae purus faucibus ornare suspendisse",
+        "Ut enim blandit volutpat maecenas",
+        "Volutpat blandit aliquam",
+        "Ultrices gravida dictum fusce ut placerat",
+        "Elit duis tristique sollicitudin nibh",
+        "Habitant morbi tristique senectus et netus",
+        "Luctus accumsan tortor posuere ac ut consequat"
       ]
-    }
-  ],
-  "volunteer": [
+    },
     {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "url": "http://coderdojo.example.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
+      "name": "Amazon",
+      "location": "Washington, United States",
+      "position": "Senior Software Engineer",
+      "url": "http://amazon.com",
+      "startDate": "2013-07-23",
+      "endDate": "2016-11-16",
+      "summary": "*Amazon.com* is an American multinational technology company based in *Seattle, Washington*, which focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence. The company has been referred to as *one of the most influential economic and cultural forces in the world*, as well as the world's most valuable brand.",
       "highlights": [
-        "Awarded 'Teacher of the Month'"
+        "Massa id neque aliquam vestibulum morbi",
+        "Consectetur adipiscing elit",
+        "Sed do eiusmod tempor incididunt ut labore",
+        "Mattis vulputate enim nulla aliquet porttitor",
+        "incididunt ut labore et dolore magna aliqua",
+        "Lacus luctus accumsan tortor"
+      ]
+    },
+    {
+      "name": "Netflix",
+      "location": "California, United States",
+      "position": "Junior Software Engineer",
+      "url": "http://netflix.com",
+      "startDate": "2010-02-14",
+      "endDate": "2013-07-22",
+      "summary": "*Netflix* is an American over-the-top content platform and production company headquartered in *Los Gatos, California*. Netflix was founded in 1997 by **Reed Hastings** and **Marc Randolph** in *Scotts Valley, California*. The company's primary business is a subscription-based streaming service offering online streaming from a library of films and television series, including those produced in-house.",
+      "highlights": [
+        "Posuere sollicitudin aliquam ultrices",
+        "Porttitor rhoncus dolor purus",
+        "Aliquam sem et tortor consequat",
+        "Pellentesque dignissim enim sit",
+        "Hendrerit dolor magna eget est"
+      ]
+    },
+    {
+      "name": "Google",
+      "location": "California, United States",
+      "position": "Software Engineer Intern",
+      "url": "http://google.com",
+      "startDate": "2009-09-13",
+      "endDate": "2010-02-13",
+      "summary": "*Google* is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, a search engine, cloud computing, software, and hardware. It is considered one of the Big Five technology companies in the U.S. information technology industry, alongside Amazon, Facebook, Apple, and Microsoft.",
+      "highlights": [
+        "Ut pharetra sit amet aliquam id diam",
+        "Vitae congue eu consequat ac",
+        "Cursus sit amet dictum sit amet"
       ]
     }
   ],
   "education": [
     {
+      "institution": "University of Stanford",
+      "url": "https://www.stanford.edu/",
+      "area": "Computer Science",
+      "studyType": "Master"
+    },
+    {
       "institution": "University of Oklahoma",
       "url": "https://www.ou.edu/",
       "area": "Information Technology",
-      "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "score": "4.0",
-      "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
-      ]
+      "studyType": "Bachelor"
     }
   ],
-  "awards": [
+  "certificates": [
     {
-      "title": "Digital Compression Pioneer Award",
-      "date": "2014-11-01",
-      "awarder": "Techcrunch",
-      "summary": "There is no spoon."
-    }
-  ],
-  "publications": [
-    {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
-      "releaseDate": "2014-10-01",
-      "url": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+      "name": "AWS Certified Solutions\n\n Architect - Professional",
+      "date": "2008-03-12",
+      "url": "https://www.your-badge.com",
+      "issuer": "Amazon Web Services"
     }
   ],
   "skills": [
     {
-      "name": "Web Development",
-      "level": "Master",
+      "name": "Languages",
       "keywords": [
-        "HTML",
-        "CSS",
-        "Javascript"
+        "Java",
+        "Python",
+        "Javascript",
+        "Rust",
+        "Golang"
       ]
     },
     {
-      "name": "Compression",
-      "level": "Master",
+      "name": "Frameworks",
       "keywords": [
-        "Mpeg",
-        "MP4",
-        "GIF"
+        "Spring",
+        "Django",
+        "Express"
+      ]
+    },
+    {
+      "name": "Tools",
+      "keywords": [
+        "VS Code",
+        "Intellij IDEA"
+      ]
+    },
+    {
+      "name": "Technologies",
+      "keywords": [
+        "Docker",
+        "Kubernetes",
+        "AWS"
+      ]
+    },
+    {
+      "name": "Other",
+      "keywords": [
+        "Open source",
+        "XP"
       ]
     }
   ],
   "languages": [
     {
       "language": "English",
-      "fluency": "Native speaker"
-    }
-  ],
-  "interests": [
+      "fluency": "Native"
+    },
     {
-      "name": "Wildlife",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
+      "language": "Russian",
+      "fluency": "Professional"
     }
-  ],
-  "references": [
-    {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
-    }
-  ],
-  "projects": [
-    {
-      "name": "Miss Direction",
-      "description": "A mapping engine that misguides you",
-      "highlights": [
-        "Won award at AIHacks 2016",
-        "Built by all women team of newbie programmers",
-        "Using modern technologies such as GoogleMaps, Chrome Extension and Javascript"
-      ],
-      "keywords": [
-        "GoogleMaps", "Chrome Extension", "Javascript"
-      ],
-      "startDate": "2016-08-24",
-      "endDate": "2016-08-24",
-      "url": "http://missdirection.example.com",
-      "roles": [
-        "Team lead", "Designer"
-      ],
-      "entity": "Smoogle",
-      "type": "application"
-    }
-  ],
-  "certificates": [
-
   ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",

@@ -1,0 +1,257 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><style>
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%; }
+
+a {
+  color: #222222;
+  font-weight: inherit;
+  text-decoration: none; }
+  a[href] {
+    text-decoration: underline; }
+
+p {
+  margin: 0; }
+
+ul, li {
+  margin: 0;
+  padding: 0; }
+
+span {
+  display: inline-block; }
+
+.content {
+  width: 1000px;
+  height: auto;
+  padding: 0 50px;
+  margin: 0 auto;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #222222; }
+
+.table {
+  width: 100%;
+  display: table;
+  padding: 20px 0; }
+  .table .main {
+    display: table-cell;
+    width: 70%;
+    padding-right: 10px; }
+  .table .side {
+    display: table-cell;
+    width: 30%;
+    padding-left: 10px;
+    text-align: right; }
+
+.margin-container-2:not(:first-child) {
+  margin-top: 20px; }
+
+.margin-container-3:not(:first-child) {
+  margin-top: 30px; }
+
+.margin-container-4:not(:first-child) {
+  margin-top: 50px; }
+
+.margin-text-1 {
+  margin-top: 0.25em; }
+  .margin-text-1:empty {
+    display: none; }
+
+.margin-text-2 {
+  margin-top: 0.5em; }
+  .margin-text-2:empty {
+    display: none; }
+
+.margin-text-3 {
+  margin-top: 1em; }
+  .margin-text-3:empty {
+    display: none; }
+
+.separator {
+  display: block;
+  background-color: #efefef;
+  width: 90%;
+  height: 1px;
+  margin: 0 auto;
+  border: none; }
+
+.section-title {
+  font-size: 32px;
+  font-weight: normal;
+  margin: 0 0 20px 0; }
+
+.markdown h1 {
+  font-size: 160%;
+  font-weight: bolder; }
+
+.markdown h2 {
+  font-size: 150%;
+  font-weight: bolder; }
+
+.markdown h3 {
+  font-size: 140%;
+  font-weight: bolder; }
+
+.markdown h4 {
+  font-size: 130%;
+  font-weight: bold; }
+
+.markdown h5 {
+  font-size: 120%;
+  font-weight: bold; }
+
+.markdown h6 {
+  font-size: 110%;
+  font-weight: bold; }
+
+.markdown ul, .markdown ol {
+  margin-left: 20px; }
+
+.markdown img {
+  display: block;
+  margin: 20px auto;
+  max-width: 1000px;
+  text-align: center; }
+
+.markdown blockquote {
+  border-left: 1px solid #efefef;
+  margin: 20px 0;
+  padding: 15px 20px; }
+  .markdown blockquote p {
+    display: inline; }
+
+.markdown code {
+  font-family: monospace; }
+
+@page {
+  size: A4;
+  margin: 15mm 0 10mm 0; }
+
+@page :first {
+  margin-top: 10mm; }
+
+.basics .main {
+  vertical-align: middle; }
+  .basics .main .name {
+    font-size: 80px;
+    line-height: 1em;
+    font-weight: bold;
+    display: block;
+    margin-left: -5.6px; }
+  .basics .main .label {
+    font-size: 40px;
+    line-height: 1em;
+    font-weight: lighter;
+    display: block;
+    margin-left: -1.6px; }
+
+.basics .side {
+  vertical-align: middle;
+  padding-left: 0;
+  padding-top: 15px; }
+  .basics .side .contact {
+    font-size: 18px;
+    list-style-type: none; }
+    .basics .side .contact li {
+      line-height: 1.5em; }
+
+.basics .summary {
+  font-size: 16px;
+  padding: 20px 0; }
+
+.work .header {
+  display: table;
+  width: 100%; }
+  .work .header .left {
+    display: table-cell; }
+    .work .header .left .position {
+      font-size: 18px;
+      font-weight: bold;
+      display: block; }
+    .work .header .left .company-location {
+      font-size: 14px;
+      font-weight: lighter;
+      display: block; }
+  .work .header .right {
+    text-align: right;
+    display: table-cell; }
+    .work .header .right .dates {
+      font-size: 14px;
+      font-weight: lighter; }
+
+.work .summary {
+  font-size: 16px;
+  padding: 0;
+  margin-top: 16px; }
+  .work .summary:empty {
+    display: none; }
+
+.work .highlights {
+  width: auto;
+  display: inline-block;
+  padding: 0 10px;
+  margin-top: 16px;
+  margin-bottom: 0;
+  columns: 2;
+  column-width: 330px;
+  column-gap: 10px; }
+  .work .highlights li {
+    font-size: 14px;
+    list-style: none; }
+    .work .highlights li:before {
+      content: "· ";
+      vertical-align: middle;
+      line-height: 14px; }
+
+.skills .container {
+  display: inline-block;
+  columns: 2;
+  column-gap: 10px; }
+  .skills .container .article {
+    break-inside: avoid-column;
+    width: 140px;
+    margin-top: 20px; }
+    .skills .container .article span {
+      display: block;
+      font-size: 18px;
+      font-weight: lighter; }
+    .skills .container .article li {
+      font-size: 14px;
+      list-style: none; }
+    .skills .container .article:first-child {
+      margin-top: 0; }
+
+.education .title {
+  font-size: 14px; }
+
+.education .institution {
+  font-size: 16px; }
+
+.certificates .name {
+  font-size: 14px; }
+
+.certificates .issuer {
+  font-size: 16px; }
+
+.languages ul {
+  list-style: none; }
+  .languages ul li {
+    font-size: 14px; }
+
+.links ul {
+  list-style: none; }
+  .links ul li {
+    font-size: 14px; }
+</style><title>Actual theme for JSON Resume</title></head><body><div class="content"><div class="basics"><div class="table"><div class="main"><span class="name">Richard Hendriks</span><span class="label">Software Developer</span></div><div class="side"><ul class="contact"><li>(912) 555-4321</li><li>rhendriks@mail.com</li><li class="margin-text-3">San Francisco, California, US</li></ul></div></div><hr class="separator"><div class="summary markdown"><p>Richard hails from <a href="https://en.wikipedia.org/wiki/Tulsa,_Oklahoma">tulsa</a>. Holds a bachelor's degree from the <em>University of Oklahoma</em> and a master's degree from <em>Stanford University</em>. (Go Sooners) Before starting <strong>Pied Piper</strong>, he worked for <strong>Hooli</strong> as a part time software developer. While his work focuses on <em>applied information theory</em>, mostly <em>optimizing lossless compression</em> schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from <em>quantum computing</em> to <em>chaos theory</em>. He could tell you about it, but THAT would NOT be a <em>length-limited</em> conversation!</p>
+</div></div><hr class="separator"><div class="table"><div class="main"><div class="work margin-container-4"><p class="section-title">Experience</p><div class="container"><div class="article margin-container-3"><div class="header"><div class="left"><span class="position">Principal Software Engineer</span><span class="company-location margin-text-1"><a href="http://facebook.com">Facebook</a> · California, United States</span></div><div class="right"><span class="dates">Nov 2016 - Present</span></div></div><div class="summary markdown"><p><em>Facebook</em> is an American social media conglomerate corporation based in <em>Menlo Park, California</em>. It was founded by <strong>Mark Zuckerberg</strong>, along with his fellow roommates and students at Harvard College, who were Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes, originally as TheFacebook.com—today's Facebook, a popular global social networking website</p>
+</div><ul class="highlights"><li>Vitae purus faucibus ornare suspendisse</li><li>Ut enim blandit volutpat maecenas</li><li>Volutpat blandit aliquam</li><li>Ultrices gravida dictum fusce ut placerat</li><li>Elit duis tristique sollicitudin nibh</li><li>Habitant morbi tristique senectus et netus</li><li>Luctus accumsan tortor posuere ac ut consequat</li></ul></div><div class="article margin-container-3"><div class="header"><div class="left"><span class="position">Senior Software Engineer</span><span class="company-location margin-text-1"><a href="http://amazon.com">Amazon</a> · Washington, United States</span></div><div class="right"><span class="dates">Jul 2013 - Nov 2016</span></div></div><div class="summary markdown"><p><em>Amazon.com</em> is an American multinational technology company based in <em>Seattle, Washington</em>, which focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence. The company has been referred to as <em>one of the most influential economic and cultural forces in the world</em>, as well as the world's most valuable brand.</p>
+</div><ul class="highlights"><li>Massa id neque aliquam vestibulum morbi</li><li>Consectetur adipiscing elit</li><li>Sed do eiusmod tempor incididunt ut labore</li><li>Mattis vulputate enim nulla aliquet porttitor</li><li>incididunt ut labore et dolore magna aliqua</li><li>Lacus luctus accumsan tortor</li></ul></div><div class="article margin-container-3"><div class="header"><div class="left"><span class="position">Junior Software Engineer</span><span class="company-location margin-text-1"><a href="http://netflix.com">Netflix</a> · California, United States</span></div><div class="right"><span class="dates">Feb 2010 - Jul 2013</span></div></div><div class="summary markdown"><p><em>Netflix</em> is an American over-the-top content platform and production company headquartered in <em>Los Gatos, California</em>. Netflix was founded in 1997 by <strong>Reed Hastings</strong> and <strong>Marc Randolph</strong> in <em>Scotts Valley, California</em>. The company's primary business is a subscription-based streaming service offering online streaming from a library of films and television series, including those produced in-house.</p>
+</div><ul class="highlights"><li>Posuere sollicitudin aliquam ultrices</li><li>Porttitor rhoncus dolor purus</li><li>Aliquam sem et tortor consequat</li><li>Pellentesque dignissim enim sit</li><li>Hendrerit dolor magna eget est</li></ul></div><div class="article margin-container-3"><div class="header"><div class="left"><span class="position">Software Engineer Intern</span><span class="company-location margin-text-1"><a href="http://google.com">Google</a> · California, United States</span></div><div class="right"><span class="dates">Sep 2009 - Feb 2010</span></div></div><div class="summary markdown"><p><em>Google</em> is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, a search engine, cloud computing, software, and hardware. It is considered one of the Big Five technology companies in the U.S. information technology industry, alongside Amazon, Facebook, Apple, and Microsoft.</p>
+</div><ul class="highlights"><li>Ut pharetra sit amet aliquam id diam</li><li>Vitae congue eu consequat ac</li><li>Cursus sit amet dictum sit amet</li></ul></div></div></div></div><div class="side"><div class="skills margin-container-4"><p class="section-title">Skills</p><div class="container"><div class="article"><span>Languages</span><ul class="margin-text-1"><li>Java</li><li>Python</li><li>Javascript</li><li>Rust</li><li>Golang</li></ul></div><div class="article"><span>Frameworks</span><ul class="margin-text-1"><li>Spring</li><li>Django</li><li>Express</li></ul></div><div class="article"><span>Tools</span><ul class="margin-text-1"><li>VS Code</li><li>Intellij IDEA</li></ul></div><div class="article"><span>Technologies</span><ul class="margin-text-1"><li>Docker</li><li>Kubernetes</li><li>AWS</li></ul></div><div class="article"><span>Other</span><ul class="margin-text-1"><li>Open source</li><li>XP</li></ul></div></div></div><div class="education margin-container-4"><p class="section-title">Education</p><div class="container"><div class="article margin-container-2"><div class="title markdown"><p>Master, Computer Science</p>
+</div><span class="institution margin-text-1"><a href="https://www.stanford.edu/">University of Stanford</a></span></div><div class="article margin-container-2"><div class="title markdown"><p>Bachelor, Information Technology</p>
+</div><span class="institution margin-text-1"><a href="https://www.ou.edu/">University of Oklahoma</a></span></div></div></div><div class="certificates margin-container-4"><p class="section-title">Certificates</p><div class="container"><div class="article margin-container-2"><div class="name markdown"><a href="https://www.your-badge.com"><p>AWS Certified Solutions</p>
+<p>Architect - Professional</p>
+</a></div><span class="issuer margin-text-1">Amazon Web Services</span></div></div></div><div class="languages margin-container-4"><p class="section-title">Languages</p><div class="container"><ul><li class="article margin-text-2"><p>English · Native</p>
+</li><li class="article margin-text-2"><p>Russian · Professional</p>
+</li></ul></div></div><div class="links margin-container-4"><p class="section-title">Links</p><div class="container"><ul><li class="article"><a href="http://richardh.example.com"><strong>richardh.example.com</strong></a></li><li class="article margin-text-2"><a href="https://gitplace.com/rhendricks"><strong>gitplace.com</strong>/rhendricks</a></li><li class="article margin-text-2"><a href="https://linkedon.com/richardh"><strong>linkedon.com</strong>/richardh</a></li></ul></div></div></div></div><hr class="separator"></div></body></html>
