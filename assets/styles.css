@@ -44,9 +44,6 @@ span {
     padding-left: 10px;
     text-align: right; }
 
-.margin-container-1:not(:first-child) {
-  margin-top: 10px; }
-
 .margin-container-2:not(:first-child) {
   margin-top: 20px; }
 
