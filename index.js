@@ -1,7 +1,7 @@
 const pug = require("pug");
 const helper = require('./assets/helper');
 
-const render = (resume) => pug.renderFile('./assets/template.pug', {
+const render = (resume) => pug.renderFile(__dirname + "/assets/template.pug", {
     resume,
     helper
 })
