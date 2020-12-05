@@ -1,8 +1,0 @@
-.idea/
-.DS_Store
-node_modules/
-public/
-test/
-coverage/
-npm-debug.log
-resume.json

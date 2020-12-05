@@ -1,5 +1,10 @@
 {
   "name": "jsonresume-theme-actual",
+  "main": "index.js",
+  "files": [
+    "/assets",
+    "index.js"
+  ],
   "version": "0.0.1",
   "description": "Actual theme for JSON Resume",
   "author": "David Carvajal",
