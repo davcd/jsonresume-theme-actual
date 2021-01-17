@@ -1,0 +1,59 @@
+a {
+  color: $text-color;
+  font-weight: inherit;
+  text-decoration: none;
+
+  &[href] {
+    text-decoration: underline;
+  }
+}
+
+p {
+  line-height: $line-height-1;
+}
+
+li {
+  line-height: $line-height-2;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.content {
+  width: $content-width;
+  height: auto;
+  padding: 0 50px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: $text-color;
+}
+
+.table {
+  width: 100%;
+  display: table;
+  padding: $space-2 0;
+
+  .main {
+    display: table-cell;
+    width: $content-main-percentage;
+    padding-right: $space-2;
+  }
+
+  .side {
+    display: table-cell;
+    width: $content-side-percentage;
+    padding-left: $space-2;
+    text-align: right;
+
+    p {
+      line-height: $line-height-2;
+    }
+  }
+}
+
+.section-title {
+  font-size: $section-title-font-size;
+  font-weight: normal;
+  margin: 0 0 $space-2 0;
+}

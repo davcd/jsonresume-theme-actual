@@ -1,0 +1,17 @@
+@mixin margin-text($margin-top) {
+  margin-top: $margin-top;
+  &:empty {
+    display: none
+  }
+}
+
+/* Workaround for 'break-before:avoid' */
+@mixin no-alone($space) {
+  break-inside: avoid;
+  &::after {
+    content: "";
+    display: block;
+    height: $space;
+    margin-bottom: -$space;
+  }
+}

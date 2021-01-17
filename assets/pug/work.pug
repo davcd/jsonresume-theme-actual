@@ -1,21 +1,22 @@
 if helper.validArray(resume.work)
     div(class='work margin-container-4')
-        p(class='section-title') Experience
+        p(class='section-title no-alone-2') Experience
         div(class='container')
             each work in resume.work
                 div(class='article margin-container-3')
-                    div(class='header')
-                        div(class='left')
-                            span(class='position')=work.position
-                            span(class='company-location margin-text-1')
-                                a(href=work.url)=work.name
-                                if work.name && work.location
-                                    | #{' · '}
-                                | #{work.location}
-                        div(class='right')
-                            span(class='dates')=helper.calcDateRange(work.startDate, work.endDate)
+                    div(class='header no-alone-1')
+                        div(class='table')
+                            div(class='left')
+                                span(class='position')=work.position
+                                span(class='company-location margin-text-1')
+                                    a(href=work.url)=work.name
+                                    if work.name && work.location
+                                        | #{' · '}
+                                    | #{work.location}
+                            div(class='right')
+                                span(class='dates')=helper.calcDateRange(work.startDate, work.endDate)
                     div(class='summary markdown')!=helper.mdToHtml(work.summary)
                     if helper.validArray(work.highlights)
-                        ul(class='highlights')
+                        ul(class='highlights no-break')
                             each highlight in work.highlights
                                 li=highlight

@@ -1,8 +1,14 @@
 @charset "UTF-8";
 
-@import 'scss/variables';
-@import 'scss/global';
-@import 'scss/pdf';
+
+@import 'scss/common/variables';
+@import 'scss/common/mixins';
+@import 'scss/common/reset';
+@import 'scss/common/pdf';
+@import 'scss/common/global';
+@import 'scss/common/utils';
+@import 'scss/common/markdown';
+
 @import 'scss/basics';
 @import 'scss/work';
 @import 'scss/skills';

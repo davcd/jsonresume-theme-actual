@@ -1,0 +1,55 @@
+.markdown {
+  h1 {
+    font-size: 160%;
+    font-weight: bolder;
+  }
+
+  h2 {
+    font-size: 150%;
+    font-weight: bolder;
+  }
+
+  h3 {
+    font-size: 140%;
+    font-weight: bolder;
+  }
+
+  h4 {
+    font-size: 130%;
+    font-weight: bold;
+  }
+
+  h5 {
+    font-size: 120%;
+    font-weight: bold;
+  }
+
+  h6 {
+    font-size: 110%;
+    font-weight: bold;
+  }
+
+  ul, ol {
+    margin-left: $space-2;
+  }
+
+  img {
+    display: block;
+    margin: $space-2 auto;
+    max-width: 1000px;
+    text-align: center;
+  }
+
+  blockquote {
+    margin: $space-2 0;
+    padding: 15px $space-2;
+
+    p {
+      display: inline;
+    }
+  }
+
+  code {
+    font-family: monospace;
+  }
+}

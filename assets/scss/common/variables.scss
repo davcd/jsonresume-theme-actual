@@ -7,16 +7,15 @@ $space-2: 20px;
 $space-3: 30px;
 $space-4: 50px;
 
+$line-height-1: 1.2;
+$line-height-2: 1.3;
+
 $text-color: #222222;
-$section-title-font-size: 32px;
+$section-title-font-size: 26px;
 
 $header-name-font-size: 80px;
 $header-line-font-size: 40px;
 $header-contact-font-size: 18px;
-
-$separator-color: #efefef;
-$separator-width: 90%;
-$separator-height: 1px;
 
 $summary-font-size: 16px;
 
@@ -25,11 +24,11 @@ $work-dates-font-size: 14px;
 $work-company-location-font-size: 14px;
 $work-summary-font-size: 16px;
 $work-highlights-font-size: 14px;
-$work-highlights-column-width: ($content-width * ($content-main-percentage / 100%) - 4 * $space-1) / 2;
+$work-highlights-column-width: ($content-width * ($content-main-percentage / 100%) - 3 * $space-1 - $space-2) / 2;
 
 $skills-groups-font-size: 18px;
 $skills-keywords-font-size: 14px;
-$skills-column-width: ($content-width * ($content-side-percentage / 100%) - 2 * $space-1) / 2;
+$skills-column-width: ($content-width * ($content-side-percentage / 100%) - $space-1 -$space-2) / 2;
 
 $education-area-font-size: 14px;
 $education-institution-font-size: 16px;

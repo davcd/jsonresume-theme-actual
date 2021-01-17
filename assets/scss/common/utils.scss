@@ -1,0 +1,35 @@
+.margin-container-2:not(:first-child) {
+  margin-top: $space-2;
+}
+
+.margin-container-3:not(:first-child) {
+  margin-top: $space-3;
+}
+
+.margin-container-4:not(:first-child) {
+  margin-top: $space-4;
+}
+
+.margin-text-1 {
+  @include margin-text(0.25em)
+}
+
+.margin-text-2 {
+  @include margin-text(0.5em)
+}
+
+.margin-text-3 {
+  @include margin-text(1em)
+}
+
+.no-break {
+  break-inside: avoid;
+}
+
+.no-alone-1 {
+  @include no-alone(75px)
+}
+
+.no-alone-2 {
+  @include no-alone(150px)
+}

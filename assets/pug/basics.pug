@@ -9,5 +9,4 @@ div(class='basics')
                 li=resume.basics.email
                 li(class='margin-text-3')=helper.calcLocation(resume.basics.location)
     if resume.basics.summary
-        hr(class='separator')
         div(class='summary markdown')!=helper.mdToHtml(resume.basics.summary)

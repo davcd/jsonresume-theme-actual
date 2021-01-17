@@ -1,14 +1,18 @@
 .skills {
 
+  .section-title {
+    margin: 0;
+  }
+
   .container {
-    display: inline-block;
+    display: block;
     columns: 2;
     column-gap: $space-1;
 
     .article {
       break-inside: avoid-column;
       width: $skills-column-width;
-      margin-top: $space-2;
+      padding-top: $space-2;
 
       span {
         display: block;
@@ -19,11 +23,9 @@
       li {
         font-size: $skills-keywords-font-size;
         list-style: none;
+        line-height: $line-height-2;
       }
 
-      &:first-child {
-        margin-top: 0;
-      }
     }
   }
 }

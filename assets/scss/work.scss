@@ -1,32 +1,34 @@
 .work {
 
   .header {
-    display: table;
-    width: 100%;
 
-    .left {
-      display: table-cell;
+    .table {
+      padding: 0;
 
-      .position {
-        font-size: $work-position-font-size;
-        font-weight: bold;
-        display: block;
+      .left {
+        display: table-cell;
+
+        .position {
+          font-size: $work-position-font-size;
+          font-weight: bold;
+          display: block;
+        }
+
+        .company-location {
+          font-size: $work-company-location-font-size;
+          font-weight: lighter;
+          display: block;
+        }
       }
 
-      .company-location {
-        font-size: $work-company-location-font-size;
-        font-weight: lighter;
-        display: block;
-      }
-    }
+      .right {
+        text-align: right;
+        display: table-cell;
 
-    .right {
-      text-align: right;
-      display: table-cell;
-
-      .dates {
-        font-size: $work-dates-font-size;
-        font-weight: lighter;
+        .dates {
+          font-size: $work-dates-font-size;
+          font-weight: lighter;
+        }
       }
     }
   }
@@ -34,7 +36,7 @@
   .summary {
     font-size: $work-summary-font-size;
     padding: 0;
-    margin-top: $work-summary-font-size;
+    margin-top: $work-summary-font-size/$line-height-2;
 
     &:empty {
       display: none
@@ -43,9 +45,9 @@
 
   .highlights {
     width: auto;
-    display: inline-block;
+    display: block;
     padding: 0 $space-1;
-    margin-top: $work-summary-font-size;
+    margin-top: $work-summary-font-size/$line-height-2;
     margin-bottom: 0;
     columns: 2;
     column-width: $work-highlights-column-width;
@@ -53,12 +55,12 @@
 
     li {
       font-size: $work-highlights-font-size;
-      list-style: none;
+      list-style: none;  line-height: $line-height-1;
 
       &:before {
         content: "· ";
         vertical-align: middle;
-        line-height: $work-highlights-font-size;
+        line-height: $line-height-2;
       }
     }
   }
