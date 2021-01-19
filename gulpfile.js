@@ -1,36 +1,42 @@
-const gulp = require('gulp')
-const sass = require('gulp-sass')
+const {src, dest, watch, series} = require('gulp')
 const pug = require('gulp-pug')
-const rename = require('gulp-rename')
-const connect = require('gulp-connect')
+const sass = require('gulp-sass')
+
+const bs = require('browser-sync').create()
 
 const fs = require('fs')
 const helper = require('./assets/helper.js')
 
 function css() {
-    return gulp.src("./assets/styles.scss")
+    return src("./assets/styles.scss")
         .pipe(sass())
-        .pipe(gulp.dest("./assets"))
+        .pipe(dest("./assets"))
 }
 
 
 function html() {
     const resume = JSON.parse(fs.readFileSync('./resume.json', 'utf-8'))
 
-    return gulp.src('./assets/template.pug')
+    return src('./assets/template.pug')
         .pipe(pug({data: {resume, helper}}))
-        .pipe(rename('index.html'))
-        .pipe(gulp.dest('./public'))
-        .pipe(connect.reload())
+        .pipe(dest('./public'))
+}
+
+function serve() {
+    bs.init({
+        server: {
+            baseDir: './public',
+            index: 'template.html'
+        },
+        ui: false,
+        open: false
+    })
+
+    watch('./assets/**/*.scss', series(css, html))
+    watch(['./assets/**/*.pug', './resume.json'], html)
+    bs.watch("./public/*.html").on("change", bs.reload);
 }
 
 exports.css = css
-exports.default = () => {
-    gulp.watch('./assets/**/*.scss', {ignoreInitial: false}, gulp.series(css, html))
-    gulp.watch(['./assets/**/*.pug', './resume.json'], html)
+exports.default = series(css, html, serve)
 
-    connect.server({
-        root: './public',
-        livereload: true
-    })
-}
