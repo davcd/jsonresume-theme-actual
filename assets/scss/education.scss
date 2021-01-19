@@ -6,5 +6,8 @@
 
   .institution {
     font-size: $education-institution-font-size;
+    a{
+      text-decoration-color: lighten($text-color, 10%);
+    }
   }
 }

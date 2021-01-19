@@ -18,6 +18,9 @@
           font-size: $work-company-location-font-size;
           font-weight: lighter;
           display: block;
+          a{
+            text-decoration-color: lighten($text-color, 30%);
+          }
         }
       }
 

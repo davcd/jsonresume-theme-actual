@@ -28,7 +28,8 @@ a {
   font-weight: inherit;
   text-decoration: none; }
   a[href] {
-    text-decoration: underline; }
+    text-decoration: underline;
+    text-decoration-color: #555555; }
 
 p {
   line-height: 1.2; }
@@ -43,7 +44,7 @@ li {
   height: auto;
   padding: 0 50px;
   margin: 0 auto;
-  font-family: Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   color: #222222; }
 
 .table {
@@ -193,6 +194,8 @@ li {
       font-size: 14px;
       font-weight: lighter;
       display: block; }
+      .work .header .table .left .company-location a {
+        text-decoration-color: #6f6f6f; }
   .work .header .table .right {
     text-align: right;
     display: table-cell; }
@@ -250,6 +253,8 @@ li {
 
 .education .institution {
   font-size: 16px; }
+  .education .institution a {
+    text-decoration-color: #3c3c3c; }
 
 .certificates .name {
   font-size: 14px; }
