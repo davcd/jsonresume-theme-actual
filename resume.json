@@ -161,6 +161,37 @@
       "fluency": "Professional"
     }
   ],
+  "projects": [
+    {
+      "name": "Node.js",
+      "description": "*Node.js* is an open-source, cross-platform, back-end JavaScript runtime environment that executes JavaScript code outside a web browser.",
+      "highlights": [
+        "Commodo elit at imperdiet dui",
+        "Id volutpat lacus laoreet non",
+        "Accumsan lacus vel facilisis"
+      ],
+      "url": "https://nodejs.org/",
+      "roles": [
+        "contributor",
+        "evangelist"
+      ]
+    },
+    {
+      "name": "Deno",
+      "description": "*Deno* is a runtime for JavaScript and TypeScript that is based on the V8 JavaScript engine and the Rust programming language. It was created by **Ryan Dahl**, original creator of Node.js, and is focused on productivity. It was announced by Dahl in 2018 during his talk \"*10 Things I Regret About Node.js*\".",
+      "highlights": [
+        "Vitae tempus quam pellentesque",
+        "Dui accumsan sit amet nulla",
+        "Ultrices vitae auctor eu augue",
+        "Scelerisque felis imperdiet",
+        "Pellentesque dignissim enim sit"
+      ],
+      "url": "https://deno.land/",
+      "roles": [
+        "creator"
+      ]
+    }
+  ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
     "version": "v1.0.0",

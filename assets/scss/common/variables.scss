@@ -12,19 +12,21 @@ $line-height-2: 1.3;
 
 $text-color: #222222;
 $section-title-font-size: 26px;
+$default-font-size: 16px;
 
 $header-name-font-size: 80px;
 $header-line-font-size: 40px;
 $header-contact-font-size: 18px;
 
-$summary-font-size: 16px;
+$main-highlights-font-size: 14px;
+$main-highlights-column-width: ($content-width * ($content-main-percentage / 100%) - 3 * $space-1 - $space-2) / 2;
 
 $work-position-font-size: 18px;
 $work-dates-font-size: 14px;
 $work-company-location-font-size: 14px;
-$work-summary-font-size: 16px;
-$work-highlights-font-size: 14px;
-$work-highlights-column-width: ($content-width * ($content-main-percentage / 100%) - 3 * $space-1 - $space-2) / 2;
+
+$project-name-font-size: 18px;
+$project-roles-font-size: 16px;
 
 $skills-groups-font-size: 18px;
 $skills-keywords-font-size: 14px;

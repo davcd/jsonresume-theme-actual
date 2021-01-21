@@ -168,6 +168,28 @@ This theme supports the following JSON paths
 }
 ```
 
+### `resume.projects`
+
+```json
+{
+  "languages": {
+    "name": "Node.js",
+    "description": "Lorem ipsum...",
+    "highlights": [
+      "Commodo elit at imperdiet dui",
+      "Id volutpat lacus laoreet non"
+    ],
+    "url": "https://nodejs.org/",
+    "roles": [
+      "contributor",
+      "evangelist"
+    ]
+  }
+}
+```
+
+- `resume.projects.description` field supports markdown
+
 ### Roadmap
 
-Pending to support `resume.projects`, `resume.interests`, `resume.awards` ands `resume.publications`.
+Pending to support `resume.interests`, `resume.awards` ands `resume.publications`.

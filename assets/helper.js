@@ -40,6 +40,21 @@ const beautifyDate = (date) => moment(date, 'YYYY-MM-DD').format('MMM YYYY')
 
 const beautifyArray = (separator, array) => array.filter(x => x).join(separator)
 
+const arrayToPhrase = (array) => {
+    let str = ""
+    let a = array.filter(x => x)
+
+    if (a.length === 1) {
+        str = a[0];
+    } else if (a.length === 2) {
+        str = a.join(' and ');
+    } else if (a.length > 2) {
+        str = a.slice(0, -1).join(', ') + ' and ' + a.slice(-1);
+    }
+
+    return str.charAt(0).toUpperCase() + str.slice(1)
+}
+
 const beautifyLink = (string) => {
     let s = string.trim().replace(/^(?:https?:\/\/)?(?:www\.)?/i, '')
     s = s.endsWith('/') ? s.slice(0, -1) : s
@@ -58,6 +73,7 @@ module.exports = {
     calcDateRange,
     beautifyDate,
     beautifyArray,
+    arrayToPhrase,
     beautifyLink,
     validArray
 }

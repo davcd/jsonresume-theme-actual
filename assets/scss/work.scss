@@ -37,34 +37,12 @@
   }
 
   .summary {
-    font-size: $work-summary-font-size;
+    font-size: $default-font-size;
     padding: 0;
-    margin-top: $work-summary-font-size/$line-height-2;
+    margin-top: $default-font-size/$line-height-2;
 
     &:empty {
       display: none
-    }
-  }
-
-  .highlights {
-    width: auto;
-    display: block;
-    padding: 0 $space-1;
-    margin-top: $work-summary-font-size/$line-height-2;
-    margin-bottom: 0;
-    columns: 2;
-    column-width: $work-highlights-column-width;
-    column-gap: $space-1;
-
-    li {
-      font-size: $work-highlights-font-size;
-      list-style: none;  line-height: $line-height-1;
-
-      &:before {
-        content: "· ";
-        vertical-align: middle;
-        line-height: $line-height-2;
-      }
     }
   }
 }

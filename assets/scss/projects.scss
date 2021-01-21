@@ -1,0 +1,37 @@
+.projects {
+
+  .header {
+
+    .name {
+      font-size: $project-name-font-size;
+      font-weight: bold;
+      display: inline-block;
+
+      a {
+        text-decoration-color: $text-color;
+      }
+    }
+
+    .roles {
+      font-size: $project-roles-font-size;
+      line-height: $project-name-font-size;
+      margin-left: 6px;
+      display: inline-block;
+
+      &:before {
+        content: "· ";
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .description {
+    font-size: $default-font-size;
+    padding: 0;
+    margin-top: $default-font-size/$line-height-2;
+
+    &:empty {
+      display: none;
+    }
+  }
+}

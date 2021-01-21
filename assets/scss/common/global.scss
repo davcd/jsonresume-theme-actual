@@ -39,6 +39,28 @@ li {
     display: table-cell;
     width: $content-main-percentage;
     padding-right: $space-2;
+
+    .highlights {
+      width: auto;
+      display: block;
+      padding: 0 $space-1;
+      margin-top: $default-font-size/$line-height-2;
+      margin-bottom: 0;
+      columns: 2;
+      column-width: $main-highlights-column-width;
+      column-gap: $space-1;
+
+      li {
+        font-size: $main-highlights-font-size;
+        list-style: none;
+        line-height: $line-height-2;
+
+        &:before {
+          content: "· ";
+          vertical-align: middle;
+        }
+      }
+    }
   }
 
   .side {

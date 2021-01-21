@@ -139,7 +139,7 @@ describe('beautifyArray function', () => {
         expect(helper.beautifyArray(', ', [])).toBe('')
     })
 
-    test('given single element array date then return element', () => {
+    test('given single element array then return element', () => {
         expect(helper.beautifyArray(' - ', ['test'])).toBe('test')
     })
 
@@ -153,10 +153,33 @@ describe('beautifyArray function', () => {
 
 })
 
+describe('arrayToPhrase function', () => {
 
-describe('beautifyLink', () => {
+    test('given empty array then return empty string', () => {
+        expect(helper.arrayToPhrase([])).toBe('')
+    })
 
-    test('given domain return strong domain', () => {
+    test('given single element array then return element', () => {
+        expect(helper.arrayToPhrase(['test'])).toBe('Test')
+    })
+
+    test('given two element array then return phrase', () => {
+        expect(helper.arrayToPhrase(['TEST1', 'TEST2'])).toBe('TEST1 and TEST2')
+    })
+
+    test('given three element array then return phrase', () => {
+        expect(helper.arrayToPhrase(['test1', 'test2', 'test3'])).toBe('Test1, test2 and test3')
+    })
+
+    test('given four element array being one undefined then return phrase', () => {
+        expect(helper.arrayToPhrase(['test1', undefined, 'test2', 'test3'])).toBe('Test1, test2 and test3')
+    })
+})
+
+
+describe('beautifyLink function', () => {
+
+    test('given domain then return strong domain', () => {
         expect(helper.beautifyLink('yourwebsite.dev/')).toBe('<strong>yourwebsite.dev</strong>')
     })
 
@@ -170,17 +193,17 @@ describe('beautifyLink', () => {
 })
 
 
-describe('validArray', () => {
+describe('validArray function', () => {
 
-    test('given undefined return false', () => {
+    test('given undefined then return false', () => {
         expect(helper.validArray(undefined)).toBe(false)
     })
 
-    test('given empty array, return false', () => {
+    test('given empty array then return false', () => {
         expect(helper.validArray([])).toBe(false)
     })
 
-    test('given valid array, return true', () => {
+    test('given valid array then return true', () => {
         expect(helper.validArray([1])).toBe(true)
     })
 })
