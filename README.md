@@ -79,8 +79,8 @@ This theme supports the following JSON paths
 }
 ```
 
-- `resume.basics.name` and `resume.basics.label` are mandatory fields
-- `resume.basics.summary` field supports markdown
+- `resume.basics.name` and `resume.basics.label` are required
+- `resume.basics.summary` supports markdown
 
 ### `resume.work`
 
@@ -103,7 +103,7 @@ This theme supports the following JSON paths
 }
 ```
 
-- `resume.work.summary` field supports markdown
+- `resume.work.summary` supports markdown
 
 ### `resume.education`
 
@@ -120,7 +120,7 @@ This theme supports the following JSON paths
 }
 ```
 
-- `resume.work.area` and `resume.work.studyType` fields supports markdown
+- `resume.work.area` and `resume.work.studyType` supports markdown
 
 ### `resume.certificates`
 
@@ -137,7 +137,7 @@ This theme supports the following JSON paths
 }
 ```
 
-- `resume.certificates.name` field supports markdown
+- `resume.certificates.name` supports markdown
 
 ### `resume.skills`
 
@@ -172,7 +172,7 @@ This theme supports the following JSON paths
 
 ```json
 {
-  "languages": {
+  "projects": {
     "name": "Node.js",
     "description": "Lorem ipsum...",
     "highlights": [
@@ -187,8 +187,8 @@ This theme supports the following JSON paths
   }
 }
 ```
-
-- `resume.projects.description` field supports markdown
+- `resume.projects.name` is required
+- `resume.projects.description` supports markdown
 
 ### `resume.interests`
 
