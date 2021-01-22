@@ -190,6 +190,18 @@ This theme supports the following JSON paths
 
 - `resume.projects.description` field supports markdown
 
+### `resume.interests`
+
+```json
+{
+  "interests": [
+    {
+      "name": "Open Source"
+    }
+  ]
+}
+```
+
 ### Roadmap
 
-Pending to support `resume.interests`, `resume.awards` ands `resume.publications`.
+Pending to support `resume.awards` ands `resume.publications`.

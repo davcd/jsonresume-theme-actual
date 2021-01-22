@@ -288,6 +288,11 @@ li {
   .languages ul li {
     font-size: 14px; }
 
+.interests ul {
+  list-style: none; }
+  .interests ul li {
+    font-size: 14px; }
+
 .links ul {
   list-style: none; }
   .links ul li {
