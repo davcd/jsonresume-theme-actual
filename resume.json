@@ -87,26 +87,35 @@
       ]
     }
   ],
-  "education": [
+  "projects": [
     {
-      "institution": "University of Stanford",
-      "url": "https://www.stanford.edu/",
-      "area": "Computer Science",
-      "studyType": "Master"
+      "name": "Node.js",
+      "description": "*Node.js* is an open-source, cross-platform, back-end JavaScript runtime environment that executes JavaScript code outside a web browser.",
+      "highlights": [
+        "Commodo elit at imperdiet dui",
+        "Id volutpat lacus laoreet non",
+        "Accumsan lacus vel facilisis"
+      ],
+      "url": "https://nodejs.org/",
+      "roles": [
+        "contributor",
+        "evangelist"
+      ]
     },
     {
-      "institution": "University of Oklahoma",
-      "url": "https://www.ou.edu/",
-      "area": "Information Technology",
-      "studyType": "Bachelor"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "AWS Certified Solutions\n\n Architect - Professional",
-      "date": "2008-03-12",
-      "url": "https://www.your-badge.com",
-      "issuer": "Amazon Web Services"
+      "name": "Deno",
+      "description": "*Deno* is a runtime for JavaScript and TypeScript that is based on the V8 JavaScript engine and the Rust programming language. It was created by **Ryan Dahl**, original creator of Node.js, and is focused on productivity. It was announced by Dahl in 2018 during his talk \"*10 Things I Regret About Node.js*\".",
+      "highlights": [
+        "Vitae tempus quam pellentesque",
+        "Dui accumsan sit amet nulla",
+        "Ultrices vitae auctor eu augue",
+        "Scelerisque felis imperdiet",
+        "Pellentesque dignissim enim sit"
+      ],
+      "url": "https://deno.land/",
+      "roles": [
+        "creator"
+      ]
     }
   ],
   "skills": [
@@ -151,6 +160,39 @@
       ]
     }
   ],
+  "education": [
+    {
+      "institution": "University of Stanford",
+      "url": "https://www.stanford.edu/",
+      "area": "Computer Science",
+      "studyType": "Master"
+    },
+    {
+      "institution": "University of Oklahoma",
+      "url": "https://www.ou.edu/",
+      "area": "Information Technology",
+      "studyType": "Bachelor"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "AWS Certified Solutions\n\n Architect - Professional",
+      "url": "https://www.your-badge.com",
+      "issuer": "Amazon Web Services"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Website of the day",
+      "awarder": "Awwward",
+      "summary": "Received for my website [domain.com](domain.com)"
+    },
+    {
+      "title": "Java Champion",
+      "awarder": "Oracle",
+      "summary": "Obtained thanks to my contributions \n\n to the Java community."
+    }
+  ],
   "languages": [
     {
       "language": "English",
@@ -159,37 +201,6 @@
     {
       "language": "Russian",
       "fluency": "Professional"
-    }
-  ],
-  "projects": [
-    {
-      "name": "Node.js",
-      "description": "*Node.js* is an open-source, cross-platform, back-end JavaScript runtime environment that executes JavaScript code outside a web browser.",
-      "highlights": [
-        "Commodo elit at imperdiet dui",
-        "Id volutpat lacus laoreet non",
-        "Accumsan lacus vel facilisis"
-      ],
-      "url": "https://nodejs.org/",
-      "roles": [
-        "contributor",
-        "evangelist"
-      ]
-    },
-    {
-      "name": "Deno",
-      "description": "*Deno* is a runtime for JavaScript and TypeScript that is based on the V8 JavaScript engine and the Rust programming language. It was created by **Ryan Dahl**, original creator of Node.js, and is focused on productivity. It was announced by Dahl in 2018 during his talk \"*10 Things I Regret About Node.js*\".",
-      "highlights": [
-        "Vitae tempus quam pellentesque",
-        "Dui accumsan sit amet nulla",
-        "Ultrices vitae auctor eu augue",
-        "Scelerisque felis imperdiet",
-        "Pellentesque dignissim enim sit"
-      ],
-      "url": "https://deno.land/",
-      "roles": [
-        "creator"
-      ]
     }
   ],
   "interests": [
@@ -204,18 +215,6 @@
     },
     {
       "name": "Writing"
-    }
-  ],
-  "awards": [
-    {
-      "title": "Website of the day",
-      "awarder": "Awwward",
-      "summary": "Received for my website [domain.com](domain.com)"
-    },
-    {
-      "title": "Java Champion",
-      "awarder": "Oracle",
-      "summary": "Obtained thanks to my contributions \n\n to the Java community."
     }
   ],
   "meta": {
