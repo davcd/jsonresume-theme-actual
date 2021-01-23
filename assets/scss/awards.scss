@@ -1,0 +1,21 @@
+.awards {
+
+  .header {
+
+    .title {
+      font-size: $awards-title-font-size;
+      display: inline-block;
+    }
+
+    .awarder {
+      font-size: $awards-awarder-font-size;
+      font-weight: lighter;
+      line-height: $awards-title-font-size;
+      display: inline-block;
+    }
+  }
+
+  .summary {
+    font-size: $awards-summary-font-size;
+  }
+}

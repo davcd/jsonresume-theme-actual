@@ -283,6 +283,19 @@ li {
 .certificates .issuer {
   font-size: 16px; }
 
+.awards .header .title {
+  font-size: 16px;
+  display: inline-block; }
+
+.awards .header .awarder {
+  font-size: 15px;
+  font-weight: lighter;
+  line-height: 16px;
+  display: inline-block; }
+
+.awards .summary {
+  font-size: 14px; }
+
 .languages ul {
   list-style: none; }
   .languages ul li {

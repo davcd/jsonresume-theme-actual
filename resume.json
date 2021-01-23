@@ -206,6 +206,18 @@
       "name": "Writing"
     }
   ],
+  "awards": [
+    {
+      "title": "Website of the day",
+      "awarder": "Awwward",
+      "summary": "Received for my website [domain.com](domain.com)"
+    },
+    {
+      "title": "Java Champion",
+      "awarder": "Oracle",
+      "summary": "Obtained thanks to my contributions \n\n to the Java community."
+    }
+  ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
     "version": "v1.0.0",

@@ -1,0 +1,12 @@
+if helper.validArray(resume.awards)
+    div(class='awards margin-container-4')
+        p(class='section-title no-alone-1') Awards
+        div(class='container')
+            each award in resume.awards
+                div(class='article margin-container-2 no-break')
+                    div(class='header')
+                        span(class='awarder')=award.awarder
+                        if award.awarder && award.title
+                            | #{' · '}
+                        span(class='title')=award.title
+                    div(class='summary markdown margin-text-1')!=helper.mdToHtml(award.summary)
