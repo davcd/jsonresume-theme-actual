@@ -15,13 +15,7 @@
     .roles {
       font-size: $project-roles-font-size;
       line-height: $project-name-font-size;
-      margin-left: 6px;
       display: inline-block;
-
-      &:before {
-        content: "· ";
-        vertical-align: middle;
-      }
     }
   }
 

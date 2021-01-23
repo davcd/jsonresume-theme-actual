@@ -207,16 +207,16 @@ li {
       font-weight: bold;
       display: block; }
     .work .header .table .left .company-location {
-      font-size: 14px;
+      font-size: 15px;
       font-weight: lighter;
       display: block; }
       .work .header .table .left .company-location a {
-        text-decoration-color: #6f6f6f; }
+        text-decoration-color: #888888; }
   .work .header .table .right {
     text-align: right;
     display: table-cell; }
     .work .header .table .right .dates {
-      font-size: 14px;
+      font-size: 15px;
       font-weight: lighter; }
 
 .work .summary {
@@ -236,11 +236,7 @@ li {
 .projects .header .roles {
   font-size: 16px;
   line-height: 18px;
-  margin-left: 6px;
   display: inline-block; }
-  .projects .header .roles:before {
-    content: "· ";
-    vertical-align: middle; }
 
 .projects .description {
   font-size: 16px;
@@ -270,18 +266,21 @@ li {
       line-height: 1.3; }
 
 .education .title {
-  font-size: 14px; }
+  font-size: 15px; }
 
 .education .institution {
-  font-size: 16px; }
+  font-size: 15px;
+  font-weight: lighter; }
   .education .institution a {
-    text-decoration-color: #3c3c3c; }
+    text-decoration-color: #888888; }
 
 .certificates .name {
-  font-size: 14px; }
+  font-size: 15px; }
 
 .certificates .issuer {
-  font-size: 16px; }
+  font-size: 15px;
+  font-weight: lighter;
+  margin-top: 0.35em; }
 
 .awards .header .title {
   font-size: 16px;
