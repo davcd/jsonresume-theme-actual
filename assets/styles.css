@@ -67,7 +67,7 @@ li {
       .table .main .highlights li {
         font-size: 14px;
         list-style: none;
-        line-height: 1.3; }
+        line-height: 1.2; }
         .table .main .highlights li:before {
           content: "· ";
           vertical-align: middle; }
