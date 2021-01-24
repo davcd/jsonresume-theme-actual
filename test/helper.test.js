@@ -27,6 +27,10 @@ describe('mdToHtml function', () => {
 
 describe('calcLocation function', () => {
 
+    test('given undefined then return null', () => {
+        expect(helper.calcLocation(undefined)).toBe(null)
+    })
+
     test('given empty object then return null', () => {
         expect(helper.calcLocation({})).toBe(null)
     })

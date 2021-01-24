@@ -8,6 +8,10 @@ const mdToHtml = (string) => string ? md.render(string) : ''
 const calcLocation = (location) => {
     let array = []
 
+    if(!location){
+        return null
+    }
+
     if (location.city) {
         array.push(location.city)
     }
