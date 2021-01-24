@@ -15,6 +15,7 @@
   "scripts": {
     "create-html": "resume export public/resume.html --format html --theme .",
     "create-pdf": "resume export public/resume.pdf --format pdf --theme .",
+    "create-docs": "resume export docs/resume_extended.pdf --resume public/resume_extended.json --format pdf --theme . && resume export docs/resume_simple.pdf --resume public/resume_simple.json --format pdf --theme .",
     "validate": "resume test",
     "test": "jest",
     "test:watch": "jest --watchAll",
