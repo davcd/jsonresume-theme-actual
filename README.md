@@ -7,6 +7,7 @@ the [v1.0.0 version](https://raw.githubusercontent.com/jsonresume/resume-schema/
 - [Extended version](docs/resume_extended.pdf)
 - [Simple version](docs/resume_simple.pdf)
 
+Maybe you would like to take a look at [jsonresume-theme-actual-letter](https://github.com/davcd/jsonresume-theme-actual-letter) to create your letter.
 ## Table of contents
 
 - [What is JSON Resume?](#what-is-json-resume)
