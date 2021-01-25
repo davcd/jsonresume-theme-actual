@@ -19,7 +19,7 @@ $header-line-font-size: 40px;
 $header-contact-font-size: 18px;
 
 $main-highlights-font-size: 14px;
-$main-highlights-column-width: ($content-width * ($content-main-percentage / 100%) - 3 * $space-1 - $space-2) / 2;
+$main-highlights-column-width: ($content-width * ($content-main-percentage / 100%) - 3 * $space-1 - $space-4) / 2;
 
 $work-position-font-size: 18px;
 $work-dates-font-size: 15px;
@@ -30,7 +30,7 @@ $project-roles-font-size: 16px;
 
 $skills-groups-font-size: 18px;
 $skills-keywords-font-size: 14px;
-$skills-column-width: ($content-width * ($content-side-percentage / 100%) - $space-1 -$space-2) / 2;
+$skills-column-width: ($content-width * ($content-side-percentage / 100%) - $space-1 -$space-4) / 2;
 
 $education-area-font-size: 15px;
 $education-institution-font-size: 15px;
