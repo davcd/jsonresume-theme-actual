@@ -1,0 +1,66 @@
+name: Publish npm package
+on:
+  push:
+    branches:
+      - master
+jobs:
+  version-check:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.version-check.outputs.changed }}
+      version: ${{ steps.version-check.outputs.version }}
+      commit: ${{ steps.version-check.outputs.commit }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - id: version-check
+        uses: EndBug/version-check@v1
+        with:
+          diff-search: true
+
+  run-test:
+    needs: version-check
+    runs-on: ubuntu-latest
+    if: needs.version-check.outputs.changed == 'true'
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ needs.version-check.outputs.commit }}
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: npm ci
+      - run: npm test
+
+  publish-npm:
+    needs: [ version-check, run-test ]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ needs.version-check.outputs.commit }}
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+      - run: npm ci
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+
+  create-tag:
+    needs: [ version-check, publish-npm ]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v3
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            github.git.createRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: "refs/tags/v${{ needs.version-check.outputs.version }}",
+              sha: "${{ needs.version-check.outputs.commit }}"
+            })
