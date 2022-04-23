@@ -29,7 +29,8 @@
     "markdown-it": "^13.0.0",
     "moment": "^2.29.3",
     "pug": "^3.0.2",
-    "puppeteer": "^13.6.0"
+    "puppeteer": "^13.6.0",
+    "sass": "^1.50.1"
   },
   "devDependencies": {
     "browser-sync": "^2.27.9",
