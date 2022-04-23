@@ -24,20 +24,19 @@
   },
   "license": "MIT",
   "dependencies": {
+    "eslint-plugin-n": "^15.1.0",
     "iso-3166-1": "^2.1.1",
-    "jsonresume-theme-actual": "^0.1.6",
     "markdown-it": "^13.0.0",
     "moment": "^2.29.3",
     "pug": "^3.0.2",
-    "puppeteer": "^13.6.0",
-    "sass": "^1.50.1"
+    "sass": "^1.50.1",
+    "scss": "^0.2.4"
   },
   "devDependencies": {
     "browser-sync": "^2.27.9",
     "eslint": "^8.14.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-pug": "^5.0.0",
