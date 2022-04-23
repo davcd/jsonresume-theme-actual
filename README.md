@@ -43,9 +43,9 @@ resume export resume.html --format html --theme actual
 
 ```bash
 git clone git@github.com:davcd/jsonresume-theme-actual.git
-cd jsonresume-theme-actual
 
-npm install
+npm install ./jsonresume-theme-actual
+
 
 gulp
 ```
