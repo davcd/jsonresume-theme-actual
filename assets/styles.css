@@ -309,3 +309,17 @@ li {
   list-style: none; }
   .links ul li {
     font-size: 14px; }
+
+.education ul {
+  list-style: none;
+  margin-top: 0.35em; }
+  .education ul li {
+    font-size: 13px;
+    font-weight: lighter; 
+    margin-top: 0.15em;
+    list-style: none;
+  }
+  .education ul li::before {
+    content: "· ";
+    vertical-align: middle;
+  }

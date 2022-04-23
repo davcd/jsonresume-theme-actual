@@ -7,3 +7,7 @@ if helper.validArray(resume.education)
                     div(class='title markdown')!=helper.mdToHtml(helper.beautifyArray(', ', [edu.studyType, edu.area]))
                     span(class='institution margin-text-1')
                         a(href=edu.url)=edu.institution
+                    if helper.validArray(edu.courses)
+                        ul(class='highlights no-break')
+                            each courses in edu.courses
+                                li=courses
