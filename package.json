@@ -24,22 +24,24 @@
   },
   "license": "MIT",
   "dependencies": {
-    "iso-3166-1": "^2.0.1",
-    "markdown-it": "^12.0.4",
-    "moment": "^2.29.1",
-    "pug": "^3.0.0"
+    "iso-3166-1": "^2.1.1",
+    "jsonresume-theme-actual": "^0.1.6",
+    "markdown-it": "^13.0.0",
+    "moment": "^2.29.3",
+    "pug": "^3.0.2",
+    "puppeteer": "^13.6.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.14",
-    "eslint": "^7.18.0",
-    "eslint-config-standard": "^16.0.2",
-    "eslint-plugin-import": "^2.22.1",
+    "browser-sync": "^2.27.9",
+    "eslint": "^8.14.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
     "gulp": "^4.0.2",
-    "gulp-pug": "^4.0.1",
-    "gulp-sass": "^4.1.0",
-    "html-validate": "^4.3.0",
-    "jest": "^26.6.3"
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "html-validate": "^6.7.1",
+    "jest": "^27.5.1"
   }
 }
