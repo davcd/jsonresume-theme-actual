@@ -2,6 +2,7 @@
 
   .title {
     font-size: $education-area-font-size;
+    font-weight: bolder;
   }
 
   .institution {
@@ -11,4 +12,23 @@
       text-decoration-color: lighten($text-color, 40%);
     }
   }
+
+  ul {
+    list-style: none;
+    margin-top: 0.55em; }
+    ul li {
+      font-size: 13px;
+      font-weight: lighter; 
+      margin-top: 0.15em;
+      list-style: none;
+    }
+    ul li::before {
+      content: "· ";
+      vertical-align: middle;
+    }
+  
+    .dates{
+      font-size: 13px;
+      font-weight: lighter; 
+    }
 }
