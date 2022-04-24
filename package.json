@@ -5,12 +5,12 @@
     "/assets",
     "index.js"
   ],
-  "version": "0.1.6",
+  "version": "0.1.6.1",
   "description": "Actual theme for JSON Resume",
-  "author": "David Carvajal",
+  "author": "Steve Chen, David Carvajal",
   "repository": {
     "type": "git",
-    "url": "https://github.com/davcd/jsonresume-theme-actual"
+    "url": "https://github.com/stevejobschen/jsonresume-theme-actual"
   },
   "scripts": {
     "create-html": "resume export public/resume.html --format html --theme .",
@@ -28,9 +28,7 @@
     "iso-3166-1": "^2.1.1",
     "markdown-it": "^13.0.0",
     "moment": "^2.29.3",
-    "pug": "^3.0.2",
-    "sass": "^1.50.1",
-    "scss": "^0.2.4"
+    "pug": "^3.0.2"
   },
   "devDependencies": {
     "browser-sync": "^2.27.9",
@@ -42,6 +40,8 @@
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "html-validate": "^6.7.1",
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "sass": "^1.50.1",
+    "scss": "^0.2.4"
   }
 }
