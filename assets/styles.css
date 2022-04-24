@@ -266,7 +266,9 @@ li {
       line-height: 1.3; }
 
 .education .title {
-  font-size: 15px; }
+  font-size: 15px;
+  font-weight:bold;
+ }
 
 .education .institution {
   font-size: 15px;
@@ -284,7 +286,9 @@ li {
 
 .awards .header .title {
   font-size: 16px;
-  display: inline-block; }
+  display: inline-block; 
+  list-style: none;
+}
 
 .awards .header .awarder {
   font-size: 15px;
@@ -312,7 +316,7 @@ li {
 
 .education ul {
   list-style: none;
-  margin-top: 0.35em; }
+  margin-top: 0.55em; }
   .education ul li {
     font-size: 13px;
     font-weight: lighter; 
@@ -322,4 +326,9 @@ li {
   .education ul li::before {
     content: "· ";
     vertical-align: middle;
+  }
+
+  .education .dates{
+    font-size: 13px;
+    font-weight: lighter; 
   }
