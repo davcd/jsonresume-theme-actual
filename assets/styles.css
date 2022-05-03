@@ -254,7 +254,7 @@ li {
   column-gap: 10px; }
   .skills .container .article {
     break-inside: avoid-column;
-    width: 120px;
+    min-width: 120px;
     padding-top: 20px; }
     .skills .container .article span {
       display: block;
