@@ -11,7 +11,7 @@
 
     .article {
       break-inside: avoid-column;
-      width: $skills-column-width;
+      min-width: $skills-column-width;
       padding-top: $space-2;
 
       span {
