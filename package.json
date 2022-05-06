@@ -31,11 +31,6 @@
   },
   "devDependencies": {
     "browser-sync": "^2.27.9",
-    "eslint": "^8.14.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
