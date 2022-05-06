@@ -217,7 +217,8 @@ li {
     display: table-cell; }
     .work .header .table .right .dates {
       font-size: 15px;
-      font-weight: lighter; }
+      font-weight: lighter;
+      white-space: nowrap; }
 
 .work .summary {
   font-size: 16px;

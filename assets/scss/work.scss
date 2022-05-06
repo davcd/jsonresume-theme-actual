@@ -31,6 +31,7 @@
         .dates {
           font-size: $work-dates-font-size;
           font-weight: lighter;
+          white-space: nowrap;
         }
       }
     }
