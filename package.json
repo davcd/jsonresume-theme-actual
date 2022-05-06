@@ -5,7 +5,7 @@
     "/assets",
     "index.js"
   ],
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Actual theme for JSON Resume",
   "author": "David Carvajal",
   "repository": {
