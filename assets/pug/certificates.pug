@@ -1,9 +1,9 @@
 if helper.validArray(resume.certificates)
-    div(class='certificates margin-container-4')
-        p(class='section-title no-alone-1') Certificates
-        div(class='container')
-            each certificate in resume.certificates
-                div(class='article margin-container-2 no-break')
-                    div(class='name markdown')
-                        a(href=certificate.url)!=helper.mdToHtml(certificate.name)
-                    span(class='issuer')=certificate.issuer
+  div(class='certificates margin-container-4')
+    p(class='section-title no-alone-1') Certificates
+    div(class='container')
+      each certificate in resume.certificates
+        div(class='article margin-container-2 no-break')
+          div(class='name markdown')
+            a(href=certificate.url)!=helper.mdToHtml(certificate.name)
+          span(class='issuer')=certificate.issuer

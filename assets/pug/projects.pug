@@ -1,18 +1,18 @@
 if helper.validArray(resume.projects)
-    div(class='projects margin-container-4')
-        p(class='section-title no-alone-2') Projects
-        div(class='container')
-            each project in resume.projects
-                div(class='article margin-container-3')
-                    div(class='header no-alone-1')
-                        span(class='name')
-                            a(href=project.url)=project.name
-                        if project.name && helper.validArray(project.roles)
-                            | #{' · '}
-                        if helper.validArray(project.roles)
-                            span(class='roles')!=helper.arrayToPhrase(project.roles)
-                    div(class='description markdown')!=helper.mdToHtml(project.description)
-                    if helper.validArray(project.highlights)
-                        ul(class='highlights no-break')
-                            each highlight in project.highlights
-                                li=highlight
+  div(class='projects margin-container-4')
+    p(class='section-title no-alone-2') Projects
+    div(class='container')
+      each project in resume.projects
+        div(class='article margin-container-3')
+          div(class='header no-alone-1')
+            span(class='name')
+              a(href=project.url)=project.name
+            if project.name && helper.validArray(project.roles)
+              | #{' · '}
+            if helper.validArray(project.roles)
+              span(class='roles')!=helper.arrayToPhrase(project.roles)
+          div(class='description markdown')!=helper.mdToHtml(project.description)
+          if helper.validArray(project.highlights)
+            ul(class='highlights no-break')
+              each highlight in project.highlights
+                li=highlight

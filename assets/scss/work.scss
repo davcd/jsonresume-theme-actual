@@ -21,7 +21,8 @@
           font-size: $work-company-location-font-size;
           font-weight: lighter;
           display: block;
-          a{
+
+          a {
             text-decoration-color: color.adjust($text-color, $lightness: 40%);
           }
         }

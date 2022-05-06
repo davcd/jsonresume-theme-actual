@@ -9,7 +9,8 @@
   .institution {
     font-size: $education-institution-font-size;
     font-weight: lighter;
-    a{
+
+    a {
       text-decoration-color: color.adjust($text-color, $lightness: 40%);
     }
   }

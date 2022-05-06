@@ -1,11 +1,11 @@
 if helper.validArray(resume.basics.profiles) || resume.basics.url
-    div(class='links margin-container-4 no-break')
-        p(class='section-title no-alone-1') Links
-        div(class='container')
-            ul
-                if resume.basics.url
-                    li(class='article')
-                        a(href=resume.basics.url)!=helper.beautifyLink(resume.basics.url)
-                each profile in resume.basics.profiles
-                    li(class='article margin-text-2')
-                        a(href=profile.url)!=helper.beautifyLink(profile.url)
+  div(class='links margin-container-4 no-break')
+    p(class='section-title no-alone-1') Links
+    div(class='container')
+      ul
+        if resume.basics.url
+          li(class='article')
+            a(href=resume.basics.url)!=helper.beautifyLink(resume.basics.url)
+        each profile in resume.basics.profiles
+          li(class='article margin-text-2')
+            a(href=profile.url)!=helper.beautifyLink(profile.url)

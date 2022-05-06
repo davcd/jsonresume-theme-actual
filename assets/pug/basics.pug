@@ -1,12 +1,12 @@
 div(class='basics')
-    div(class='table')
-        div(class='main')
-            span(class='name')=resume.basics.name
-            span(class='label')=resume.basics.label
-        div(class='side')
-            ul(class='contact')
-                li=resume.basics.phone
-                li=resume.basics.email
-                li(class='margin-text-3')=helper.calcLocation(resume.basics.location)
-    if resume.basics.summary
-        div(class='summary markdown')!=helper.mdToHtml(resume.basics.summary)
+  div(class='table')
+    div(class='main')
+      span(class='name')=resume.basics.name
+      span(class='label')=resume.basics.label
+    div(class='side')
+      ul(class='contact')
+        li=resume.basics.phone
+        li=resume.basics.email
+        li(class='margin-text-3')=helper.calcLocation(resume.basics.location)
+  if resume.basics.summary
+    div(class='summary markdown')!=helper.mdToHtml(resume.basics.summary)
