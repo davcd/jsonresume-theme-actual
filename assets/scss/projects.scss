@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .projects {
 
   .header {
@@ -22,7 +24,7 @@
   .description {
     font-size: $default-font-size;
     padding: 0;
-    margin-top: $default-font-size/$line-height-2;
+    margin-top: math.div($default-font-size, $line-height-2);
 
     &:empty {
       display: none;

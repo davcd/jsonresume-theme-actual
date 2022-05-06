@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "sass:math";
+
 .work {
 
   .header {
@@ -19,7 +22,7 @@
           font-weight: lighter;
           display: block;
           a{
-            text-decoration-color: lighten($text-color, 40%);
+            text-decoration-color: color.adjust($text-color, $lightness: 40%);
           }
         }
       }
@@ -40,7 +43,7 @@
   .summary {
     font-size: $default-font-size;
     padding: 0;
-    margin-top: $default-font-size/$line-height-2;
+    margin-top: math.div($default-font-size, $line-height-2);
 
     &:empty {
       display: none

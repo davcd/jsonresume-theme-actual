@@ -1,3 +1,5 @@
+@use "sass:color";
+
 .education {
 
   .title {
@@ -8,7 +10,7 @@
     font-size: $education-institution-font-size;
     font-weight: lighter;
     a{
-      text-decoration-color: lighten($text-color, 40%);
+      text-decoration-color: color.adjust($text-color, $lightness: 40%);
     }
   }
 }

@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "sass:math";
+
 a {
   color: $text-color;
   font-weight: inherit;
@@ -5,7 +8,7 @@ a {
 
   &[href] {
     text-decoration: underline;
-    text-decoration-color: lighten($text-color, 20%);
+    text-decoration-color: color.adjust($text-color, $lightness: 20%);
   }
 }
 
@@ -44,7 +47,7 @@ li {
       width: auto;
       display: block;
       padding: 0 $space-1;
-      margin-top: $default-font-size/$line-height-2;
+      margin-top: math.div($default-font-size, $line-height-2);
       margin-bottom: 0;
       columns: 2;
       column-width: $main-highlights-column-width;
