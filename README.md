@@ -3,11 +3,20 @@
 Minimalist and modern theme for [JSON Resume](https://jsonresume.org/) standard, designed for
 the [v1.0.0 version](https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json).
 
+- Only meaningful information
+- Single color
+- Single font-family
+- Single page? Up to you!
+
 ### Export examples
+
 - [Extended version](docs/resume_extended.pdf)
 - [Simple version](docs/resume_simple.pdf)
 
-Maybe you would like to take a look at [jsonresume-theme-actual-letter](https://github.com/davcd/jsonresume-theme-actual-letter) to create your letter.
+Maybe you would like to take a look at
+[jsonresume-theme-actual-letter](https://github.com/davcd/jsonresume-theme-actual-letter)
+to create your letter.
+
 ## Table of contents
 
 - [What is JSON Resume?](#what-is-json-resume)
@@ -95,6 +104,7 @@ This theme supports the following JSON paths
       "position": "Software Engineer",
       "url": "http://facebook.com",
       "startDate": "2016-11-17",
+      "endDate": "2018-07-22",
       "summary": "Lorem ipsum...",
       "highlights": [
         "Vitae purus faucibus ornare suspendisse",
@@ -106,43 +116,6 @@ This theme supports the following JSON paths
 ```
 
 - `resume.work.summary` supports markdown
-
-### `resume.projects`
-
-```json
-{
-  "projects": {
-    "name": "Node.js",
-    "description": "Lorem ipsum...",
-    "highlights": [
-      "Commodo elit at imperdiet dui",
-      "Id volutpat lacus laoreet non"
-    ],
-    "url": "https://nodejs.org/",
-    "roles": [
-      "contributor",
-      "evangelist"
-    ]
-  }
-}
-```
-- `resume.projects.description` supports markdown
-
-### `resume.skills`
-
-```json
-{
-  "skills": [
-    {
-      "name": "Languages",
-      "keywords": [
-        "Java",
-        "Python"
-      ]
-    }
-  ]
-}
-```
 
 ### `resume.education`
 
@@ -159,7 +132,23 @@ This theme supports the following JSON paths
 }
 ```
 
-- `resume.work.area` and `resume.work.studyType` supports markdown
+- `resume.education.area` and `resume.education.studyType` supports markdown
+
+### `resume.awards`
+
+```json
+{
+  "awards": [
+    {
+      "title": "Website of the day",
+      "awarder": "Awwward",
+      "summary": "Lorem ipsum..."
+    }
+  ]
+}
+```
+
+- `resume.awards.summary` supports markdown
 
 ### `resume.certificates`
 
@@ -177,20 +166,21 @@ This theme supports the following JSON paths
 
 - `resume.certificates.name` supports markdown
 
-### `resume.awards`
+### `resume.skills`
 
 ```json
 {
-  "awards": [
+  "skills": [
     {
-      "title": "Website of the day",
-      "awarder": "Awwward",
-      "summary": "Lorem ipsum..."
+      "name": "Languages",
+      "keywords": [
+        "Java",
+        "Python"
+      ]
     }
   ]
 }
 ```
-- `resume.awards.summary` supports markdown
 
 ### `resume.languages`
 
@@ -217,4 +207,26 @@ This theme supports the following JSON paths
 }
 ```
 
-#### `resume.references`, `resume.volunteer` and `resume.publications` fields are not supported yet.
+### `resume.projects`
+
+```json
+{
+  "projects": {
+    "name": "Node.js",
+    "description": "Lorem ipsum...",
+    "highlights": [
+      "Commodo elit at imperdiet dui",
+      "Id volutpat lacus laoreet non"
+    ],
+    "url": "https://nodejs.org/",
+    "roles": [
+      "contributor",
+      "evangelist"
+    ]
+  }
+}
+```
+
+- `resume.projects.description` supports markdown
+
+#### `resume.volunteer`, `resume.publications` and `resume.references` fields are not supported yet.
