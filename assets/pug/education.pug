@@ -5,5 +5,5 @@ if helper.validArray(resume.education)
       each edu in resume.education
         div(class='article margin-container-2 no-break')
           div(class='title markdown')!=helper.mdToHtml(helper.beautifyArray(', ', [edu.studyType, edu.area]))
-          span(class='institution margin-text-1')
+          span(class='institution margin-text-2')
             a(href=edu.url)=edu.institution

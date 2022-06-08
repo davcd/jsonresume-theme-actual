@@ -3,15 +3,11 @@
 .education {
 
   .title {
-    font-size: $education-area-font-size;
+    font-size: $font-size-small;
   }
 
   .institution {
-    font-size: $education-institution-font-size;
+    font-size: $font-size-small;
     font-weight: lighter;
-
-    a {
-      text-decoration-color: color.adjust($text-color, $lightness: 40%);
-    }
   }
 }

@@ -1,5 +1,5 @@
 div(class='basics')
-  div(class='table')
+  div(class='table padding-container-2')
     div(class='main')
       span(class='name')=resume.basics.name
       span(class='label')=resume.basics.label
@@ -7,6 +7,6 @@ div(class='basics')
       ul(class='contact')
         li=resume.basics.phone
         li=resume.basics.email
-        li(class='margin-text-3')=helper.calcLocation(resume.basics.location)
+        li(class='margin-text-5')=helper.calcLocation(resume.basics.location)
   if resume.basics.summary
-    div(class='summary markdown')!=helper.mdToHtml(resume.basics.summary)
+    div(class='summary markdown padding-container-2')!=helper.mdToHtml(resume.basics.summary)

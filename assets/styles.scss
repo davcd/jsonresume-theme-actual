@@ -9,13 +9,14 @@
 @import 'scss/common/utils';
 @import 'scss/common/markdown';
 
+@import 'scss/main';
+
 @import 'scss/basics';
-@import 'scss/work';
-@import 'scss/projects';
-@import 'scss/skills';
+@import 'scss/links';
 @import 'scss/education';
-@import 'scss/certificates';
 @import 'scss/awards';
+@import 'scss/certificates';
+@import 'scss/skills';
 @import 'scss/languages';
 @import 'scss/interests';
-@import 'scss/links';
+@import 'scss/references';

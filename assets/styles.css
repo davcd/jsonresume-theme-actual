@@ -12,7 +12,7 @@ ul, li {
   padding: 0;
 }
 
-span {
+span, q {
   display: block;
 }
 
@@ -34,15 +34,15 @@ a {
 }
 a[href] {
   text-decoration: underline;
-  text-decoration-color: #555555;
+  text-decoration-color: #888888;
 }
 
-p {
-  line-height: 1.2;
+p, q {
+  line-height: 1.25em;
 }
 
 li {
-  line-height: 1.3;
+  line-height: 1.35em;
 }
 li:first-child {
   margin-top: 0;
@@ -60,31 +60,11 @@ li:first-child {
 .table {
   width: 100%;
   display: table;
-  padding: 20px 0;
 }
 .table .main {
   display: table-cell;
   width: 70%;
   padding-right: 50px;
-}
-.table .main .highlights {
-  width: auto;
-  display: block;
-  padding: 0 10px;
-  margin-top: 12.3076923077px;
-  margin-bottom: 0;
-  columns: 2;
-  column-width: 310px;
-  column-gap: 10px;
-}
-.table .main .highlights li {
-  font-size: 14px;
-  list-style: none;
-  line-height: 1.2;
-}
-.table .main .highlights li:before {
-  content: "· ";
-  vertical-align: middle;
 }
 .table .side {
   display: table-cell;
@@ -92,8 +72,12 @@ li:first-child {
   padding-left: 50px;
   text-align: right;
 }
-.table .side p {
-  line-height: 1.3;
+
+.summary {
+  font-size: 15px;
+}
+.summary:empty {
+  display: none;
 }
 
 .section-title {
@@ -114,24 +98,42 @@ li:first-child {
   margin-top: 50px;
 }
 
+.padding-container-2 {
+  padding: 20px 0;
+}
+
 .margin-text-1 {
-  margin-top: 0.25em;
+  margin-top: 2px;
 }
 .margin-text-1:empty {
   display: none;
 }
 
 .margin-text-2 {
-  margin-top: 0.5em;
+  margin-top: 4px;
 }
 .margin-text-2:empty {
   display: none;
 }
 
 .margin-text-3 {
-  margin-top: 1em;
+  margin-top: 6px;
 }
 .margin-text-3:empty {
+  display: none;
+}
+
+.margin-text-4 {
+  margin-top: 8px;
+}
+.margin-text-4:empty {
+  display: none;
+}
+
+.margin-text-5 {
+  margin-top: 14px;
+}
+.margin-text-5:empty {
   display: none;
 }
 
@@ -203,6 +205,46 @@ li:first-child {
   font-family: monospace;
 }
 
+.main .highlights {
+  width: auto;
+  display: block;
+  padding: 0 10px;
+  margin-bottom: 0;
+  columns: 2;
+  column-width: 310px;
+  column-gap: 10px;
+}
+.main .highlights li {
+  font-size: 14px;
+  list-style: none;
+}
+.main .highlights li:before {
+  content: "· ";
+  vertical-align: middle;
+}
+.main .left {
+  display: table-cell;
+}
+.main .left .title {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+}
+.main .left .subtitle {
+  font-size: 16px;
+  font-weight: lighter;
+  display: block;
+}
+.main .right {
+  text-align: right;
+  display: table-cell;
+}
+.main .right .date {
+  font-size: 15px;
+  font-weight: lighter;
+  white-space: nowrap;
+}
+
 .basics .main {
   vertical-align: middle;
 }
@@ -226,74 +268,45 @@ li:first-child {
   padding-top: 15px;
 }
 .basics .side .contact {
-  font-size: 18px;
   list-style-type: none;
 }
 .basics .side .contact li {
-  line-height: 1.5em;
-}
-.basics .summary {
-  font-size: 16px;
-  padding: 20px 0;
+  font-size: 18px;
+  line-height: 1.6em;
 }
 
-.work .header .table {
-  padding: 0;
+.links ul {
+  list-style: none;
 }
-.work .header .table .left {
-  display: table-cell;
-}
-.work .header .table .left .position {
-  font-size: 18px;
-  font-weight: bold;
-  display: block;
-}
-.work .header .table .left .company-location {
-  font-size: 15px;
-  font-weight: lighter;
-  display: block;
-}
-.work .header .table .left .company-location a {
-  text-decoration-color: #888888;
-}
-.work .header .table .right {
-  text-align: right;
-  display: table-cell;
-}
-.work .header .table .right .dates {
-  font-size: 15px;
-  font-weight: lighter;
-  white-space: nowrap;
-}
-.work .summary {
-  font-size: 16px;
-  padding: 0;
-  margin-top: 12.3076923077px;
-}
-.work .summary:empty {
-  display: none;
+.links ul li {
+  font-size: 14px;
 }
 
-.projects .header .name {
-  font-size: 18px;
-  font-weight: bold;
-  display: inline-block;
+.education .title {
+  font-size: 15px;
 }
-.projects .header .name a {
-  text-decoration-color: #222222;
+.education .institution {
+  font-size: 15px;
+  font-weight: lighter;
 }
-.projects .header .roles {
-  font-size: 16px;
-  line-height: 18px;
-  display: inline-block;
+
+.awards .header .title {
+  font-size: 15px;
 }
-.projects .description {
-  font-size: 16px;
-  padding: 0;
-  margin-top: 12.3076923077px;
+.awards .header .awarder {
+  font-size: 15px;
+  font-weight: lighter;
 }
-.projects .description:empty {
-  display: none;
+.awards .summary {
+  font-size: 14px;
+}
+
+.certificates .name {
+  font-size: 15px;
+}
+.certificates .issuer {
+  font-size: 15px;
+  font-weight: lighter;
 }
 
 .skills .section-title {
@@ -317,41 +330,6 @@ li:first-child {
 .skills .container .article li {
   font-size: 14px;
   list-style: none;
-  line-height: 1.3;
-}
-
-.education .title {
-  font-size: 15px;
-}
-.education .institution {
-  font-size: 15px;
-  font-weight: lighter;
-}
-.education .institution a {
-  text-decoration-color: #888888;
-}
-
-.certificates .name {
-  font-size: 15px;
-}
-.certificates .issuer {
-  font-size: 15px;
-  font-weight: lighter;
-  margin-top: 0.35em;
-}
-
-.awards .header .title {
-  font-size: 16px;
-  display: inline-block;
-}
-.awards .header .awarder {
-  font-size: 15px;
-  font-weight: lighter;
-  line-height: 16px;
-  display: inline-block;
-}
-.awards .summary {
-  font-size: 14px;
 }
 
 .languages ul {
@@ -368,9 +346,11 @@ li:first-child {
   font-size: 14px;
 }
 
-.links ul {
-  list-style: none;
+.references .name {
+  font-size: 15px;
 }
-.links ul li {
-  font-size: 14px;
+.references q {
+  font-size: 14.5px;
+  font-weight: lighter;
+  font-style: italic;
 }

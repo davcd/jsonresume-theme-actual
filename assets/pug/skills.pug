@@ -6,6 +6,6 @@ if helper.validArray(resume.skills)
         div(class='article no-break')
           span=skill.name
           if helper.validArray(skill.keywords)
-            ul(class='margin-text-1')
+            ul(class='margin-text-2')
               each keyword in skill.keywords
                 li=keyword

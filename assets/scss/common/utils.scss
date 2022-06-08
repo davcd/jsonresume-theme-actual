@@ -10,17 +10,30 @@
   margin-top: $space-4;
 }
 
+.padding-container-2 {
+  padding: $space-2 0;
+}
+
 .margin-text-1 {
-  @include margin-text(0.25em)
+  @include margin-text(2px)
 }
 
 .margin-text-2 {
-  @include margin-text(0.5em)
+  @include margin-text(4px)
 }
 
 .margin-text-3 {
-  @include margin-text(1em)
+  @include margin-text(6px)
 }
+
+.margin-text-4 {
+  @include margin-text(8px)
+}
+
+.margin-text-5 {
+  @include margin-text(14px)
+}
+
 
 .no-break {
   break-inside: avoid;

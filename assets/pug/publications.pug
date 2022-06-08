@@ -1,0 +1,15 @@
+if helper.validArray(resume.publications)
+  div(class='publications margin-container-4')
+    p(class='section-title no-alone-2') Publications
+    div(class='container')
+      each publication in resume.publications
+        div(class='article margin-container-3')
+          div(class='header no-alone-1')
+            div(class='table')
+              div(class='left')
+                span(class='title')
+                  a(href=publication.url)=publication.name
+                span(class='subtitle margin-text-1')=publication.publisher
+              div(class='right')
+                span(class='date')=helper.calcDate(publication.releaseDate)
+          div(class='summary markdown margin-text-4')!=helper.mdToHtml(publication.summary)

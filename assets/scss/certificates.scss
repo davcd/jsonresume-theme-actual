@@ -1,12 +1,11 @@
 .certificates {
 
   .name {
-    font-size: $certificates-name-font-size;
+    font-size: $font-size-small;
   }
 
   .issuer {
-    font-size: $certificates-issuer-font-size;
+    font-size: $font-size-small;
     font-weight: lighter;
-    margin-top: 0.35em;
   }
 }

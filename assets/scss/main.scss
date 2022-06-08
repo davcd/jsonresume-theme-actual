@@ -1,0 +1,51 @@
+@use "sass:math";
+
+.main {
+
+  .highlights {
+    width: auto;
+    display: block;
+    padding: 0 $space-1;
+    margin-bottom: 0;
+    columns: 2;
+    column-width: ($content-width * math.div($content-main-percentage, 100%) - 3 * $space-1 - $space-4) * 0.5;
+    column-gap: $space-1;
+
+    li {
+      font-size: $font-size-xsmall;
+      list-style: none;
+
+      &:before {
+        content: "· ";
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .left {
+    display: table-cell;
+
+    .title {
+      font-size: $font-size-large;
+      font-weight: bold;
+      display: block;
+    }
+
+    .subtitle {
+      font-size: $font-size-medium;
+      font-weight: lighter;
+      display: block;
+    }
+  }
+
+  .right {
+    text-align: right;
+    display: table-cell;
+
+    .date {
+      font-size: $font-size-small;
+      font-weight: lighter;
+      white-space: nowrap;
+    }
+  }
+}

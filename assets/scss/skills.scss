@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .skills {
 
   .section-title {
@@ -11,21 +13,19 @@
 
     .article {
       break-inside: avoid-column;
-      min-width: $skills-column-width;
+      min-width: ($content-width * math.div($content-side-percentage, 100%) - $space-1 -$space-4) * 0.5;
       padding-top: $space-2;
 
       span {
         display: block;
-        font-size: $skills-groups-font-size;
+        font-size: $font-size-large;
         font-weight: lighter;
       }
 
       li {
-        font-size: $skills-keywords-font-size;
+        font-size: $font-size-xsmall;
         list-style: none;
-        line-height: $line-height-2;
       }
-
     }
   }
 }

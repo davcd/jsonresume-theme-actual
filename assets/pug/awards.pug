@@ -5,8 +5,6 @@ if helper.validArray(resume.awards)
       each award in resume.awards
         div(class='article margin-container-2 no-break')
           div(class='header')
-            span(class='awarder')=award.awarder
-            if award.awarder && award.title
-              | #{' · '}
             span(class='title')=award.title
-          div(class='summary markdown margin-text-1')!=helper.mdToHtml(award.summary)
+            span(class='awarder margin-text-2')=award.awarder
+          div(class='summary markdown margin-text-3')!=helper.mdToHtml(award.summary)

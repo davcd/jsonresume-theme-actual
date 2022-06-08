@@ -3,19 +3,16 @@
   .header {
 
     .title {
-      font-size: $awards-title-font-size;
-      display: inline-block;
+      font-size: $font-size-small;
     }
 
     .awarder {
-      font-size: $awards-awarder-font-size;
+      font-size: $font-size-small;
       font-weight: lighter;
-      line-height: $awards-title-font-size;
-      display: inline-block;
     }
   }
 
   .summary {
-    font-size: $awards-summary-font-size;
+    font-size: $font-size-xsmall;
   }
 }

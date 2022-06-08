@@ -1,0 +1,19 @@
+if helper.validArray(resume.volunteer)
+  div(class='volunteer margin-container-4')
+    p(class='section-title no-alone-2') Volunteer
+    div(class='container')
+      each volunteer in resume.volunteer
+        div(class='article margin-container-3')
+          div(class='header no-alone-1')
+            div(class='table')
+              div(class='left')
+                span(class='title')=volunteer.position
+                span(class='subtitle margin-text-1')
+                  a(href=volunteer.url)=volunteer.organization
+              div(class='right')
+                span(class='date')=helper.calcDateRange(volunteer.startDate, volunteer.endDate)
+          div(class='summary markdown margin-text-4')!=helper.mdToHtml(volunteer.summary)
+          if helper.validArray(volunteer.highlights)
+            ul(class='highlights margin-text-4 no-break')
+              each highlight in volunteer.highlights
+                li=highlight

@@ -1,5 +1,4 @@
 @use "sass:color";
-@use "sass:math";
 
 a {
   color: $text-color;
@@ -8,11 +7,11 @@ a {
 
   &[href] {
     text-decoration: underline;
-    text-decoration-color: color.adjust($text-color, $lightness: 20%);
+    text-decoration-color: color.adjust($text-color, $lightness: 40%);
   }
 }
 
-p {
+p, q {
   line-height: $line-height-1;
 }
 
@@ -36,34 +35,11 @@ li {
 .table {
   width: 100%;
   display: table;
-  padding: $space-2 0;
 
   .main {
     display: table-cell;
     width: $content-main-percentage;
     padding-right: $space-4;
-
-    .highlights {
-      width: auto;
-      display: block;
-      padding: 0 $space-1;
-      margin-top: math.div($default-font-size, $line-height-2);
-      margin-bottom: 0;
-      columns: 2;
-      column-width: $main-highlights-column-width;
-      column-gap: $space-1;
-
-      li {
-        font-size: $main-highlights-font-size;
-        list-style: none;
-        line-height: $line-height-1;
-
-        &:before {
-          content: "· ";
-          vertical-align: middle;
-        }
-      }
-    }
   }
 
   .side {
@@ -71,15 +47,19 @@ li {
     width: $content-side-percentage;
     padding-left: $space-4;
     text-align: right;
+  }
+}
 
-    p {
-      line-height: $line-height-2;
-    }
+.summary {
+  font-size: $font-size-small;
+
+  &:empty {
+    display: none
   }
 }
 
 .section-title {
-  font-size: $section-title-font-size;
+  font-size: $font-size-xlarge;
   font-weight: normal;
   margin: 0 0 $space-2 0;
 }

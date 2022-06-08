@@ -1,0 +1,8 @@
+if helper.validArray(resume.references)
+  div(class='references margin-container-4')
+    p(class='section-title no-alone-2') References
+    div(class='container')
+      each reference in resume.references
+        div(class='article margin-container-2 no-break')
+          span(class='name')=reference.name
+          q(class='margin-text-2')=reference.reference

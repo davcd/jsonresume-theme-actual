@@ -7,16 +7,16 @@ if helper.validArray(resume.work)
           div(class='header no-alone-1')
             div(class='table')
               div(class='left')
-                span(class='position')=work.position
-                span(class='company-location margin-text-1')
+                span(class='title')=work.position
+                span(class='subtitle margin-text-1')
                   a(href=work.url)=work.name
                   if work.name && work.location
                     | #{' · '}
                   | #{work.location}
               div(class='right')
-                span(class='dates')=helper.calcDateRange(work.startDate, work.endDate)
-          div(class='summary markdown')!=helper.mdToHtml(work.summary)
+                span(class='date')=helper.calcDateRange(work.startDate, work.endDate)
+          div(class='summary markdown margin-text-4')!=helper.mdToHtml(work.summary)
           if helper.validArray(work.highlights)
-            ul(class='highlights no-break')
+            ul(class='highlights margin-text-4 no-break')
               each highlight in work.highlights
                 li=highlight

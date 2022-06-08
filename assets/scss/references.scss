@@ -1,0 +1,14 @@
+@use "sass:math";
+
+.references {
+
+  .name {
+    font-size: $font-size-small;
+  }
+
+  q {
+    font-size: math.div($font-size-small + $font-size-xsmall, 2);
+    font-weight: lighter;
+    font-style: italic;
+  }
+}

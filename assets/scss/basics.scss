@@ -26,18 +26,12 @@
     padding-top: 15px;
 
     .contact {
-      font-size: $header-contact-font-size;
       list-style-type: none;
 
       li {
-        line-height: 1.5em;
+        font-size: $font-size-large;
+        line-height: $line-height-3;
       }
     }
-  }
-
-
-  .summary {
-    font-size: $default-font-size;
-    padding: $space-2 0;
   }
 }
