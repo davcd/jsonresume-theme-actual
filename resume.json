@@ -28,7 +28,7 @@
       "position": "Principal Software Engineer",
       "url": "https://www.facebook.com/",
       "startDate": "2016-11-17",
-      "summary": "*Facebook* is an American social media conglomerate corporation based in *Menlo Park, California*. It was founded by **Mark Zuckerberg**, along with his fellow roommates and students at Harvard College, who were Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes, originally as TheFacebook.com—today's Facebook, a popular global social networking website",
+      "summary": "*Facebook* is an American social media conglomerate corporation based in *Menlo Park, California*. It was founded by **Mark Zuckerberg**, along with his fellow roommates and students at Harvard College, who were Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes, originally as TheFacebook.com—today's Facebook, a popular global social networking website.",
       "highlights": [
         "Vitae purus faucibus ornare suspendisse",
         "Ut enim blandit volutpat maecenas",
@@ -87,6 +87,30 @@
       ]
     }
   ],
+  "volunteer": [
+    {
+      "organization": "Animal Refuge",
+      "position": "Supervisor",
+      "url": "https://example.com/",
+      "startDate": "2012-10-11",
+      "endDate": "2014-12-24",
+      "summary": "Nulla sit amet velit ac turpis interdum consectetur eget vitae ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam pharetra diam et tortor bibendum laoreet.",
+      "highlights": [
+        "Maecenas at dictum sem",
+        "Ut ac ex ac ipsum commodo",
+        "Pellentesque vitae sed dolor",
+        "Aliquam ut lectus ac lacus ultrices"
+      ]
+    },
+    {
+      "organization": "Red cross",
+      "position": "Math professor",
+      "url": "https://example.com/",
+      "startDate": "2011-01-16",
+      "endDate": "2012-10-10",
+      "summary": "Proin id justo pulvinar, imperdiet eros ac, iaculis nunc. Donec dignissim leo volutpat, cursus arcu vel, dapibus risus. Nam ut volutpat est. In fringilla commodo pretium. Vestibulum efficitur pellentesque ex. Nulla dictum, mauris sit amet mattis pharetra, purus ipsum commodo ex, a molestie metus augue sit amet justo."
+    }
+  ],
   "education": [
     {
       "institution": "University of Stanford",
@@ -115,9 +139,34 @@
   ],
   "certificates": [
     {
-      "name": "AWS Certified Solutions\n\n Architect - Professional",
-      "url": "https://www.your-badge.com",
-      "issuer": "Amazon Web Services"
+      "name": "AWS Certified Solutions\n\nArchitect - Professional",
+      "issuer": "Amazon Web Services",
+      "url": "https://www.your-badge.com"
+    },
+    {
+      "name": "Oracle Certified Professional\n\nJava SE 17 Developer",
+      "issuer": "Oracle",
+      "url": "https://www.your-badge.com"
+    },
+    {
+      "name": "CCNA Routing and Switching",
+      "issuer": "Cisco",
+      "url": "https://www.your-badge.com"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Chasing the Higgs Boson",
+      "publisher": "The New York Times",
+      "releaseDate": "2013-03-04",
+      "url": "https://www.nytimes.com/",
+      "summary": "Integer luctus erat at sapien pharetra, nec elementum diam euismod. Maecenas condimentum eu nisi ut aliquet. Donec vitae ultricies risus. Donec commodo justo at odio cursus, nec mattis tellus dignissim."
+    },
+    {
+      "name": "Clean Code: A Handbook of Agile Software Craftsmanship",
+      "publisher": "Pearson",
+      "releaseDate": "2008-08-01",
+      "summary": "Morbi lobortis sodales nisi, et vulputate diam posuere vitae. Phasellus sollicitudin vehicula justo vel tincidunt. Donec faucibus magna ut sollicitudin tincidunt. Etiam sodales neque eu mollis egestas. Nam nisl nulla, iaculis sit amet condimentum quis, iaculis ut ex. Donec gravida efficitur ligula, ac auctor magna efficitur vel."
     }
   ],
   "skills": [
@@ -185,21 +234,21 @@
       "name": "Writing"
     }
   ],
-  "projects": [
+  "references": [
     {
-      "name": "Node.js",
-      "description": "*Node.js* is an open-source, cross-platform, back-end JavaScript runtime environment that executes JavaScript code outside a web browser.",
-      "highlights": [
-        "Commodo elit at imperdiet dui",
-        "Id volutpat lacus laoreet non",
-        "Accumsan lacus vel facilisis"
-      ],
-      "url": "https://nodejs.org/",
-      "roles": [
-        "contributor",
-        "evangelist"
-      ]
+      "name": "Robert C. Martin",
+      "reference": "Suspendisse a tristique massa. Curabitur sollicitudin volutpat urna, sed pretium justo tincidunt non."
     },
+    {
+      "name": "Martin Fowler",
+      "reference": "Integer luctus erat at sapien pharetra, nec elementum diam euismod. Maecenas condimentum eu nisi ut aliquet. Donec vitae ultricies risus. Donec commodo justo at odio cursus, nec mattis tellus dignissim."
+    },
+    {
+      "name": "Elon Musk",
+      "reference": "Sed pretium urna orci, at mollis ante fermentum at. Donec sagittis risus hendrerit venenatis consequat."
+    }
+  ],
+  "projects": [
     {
       "name": "Deno",
       "description": "*Deno* is a runtime for JavaScript and TypeScript that is based on the V8 JavaScript engine and the Rust programming language. It was created by **Ryan Dahl**, original creator of Node.js, and is focused on productivity. It was announced by Dahl in 2018 during his talk \"*10 Things I Regret About Node.js*\".",
@@ -210,9 +259,26 @@
         "Scelerisque felis imperdiet",
         "Pellentesque dignissim enim sit"
       ],
+      "startDate": "2018-05-13",
       "url": "https://deno.land/",
       "roles": [
         "creator"
+      ]
+    },
+    {
+      "name": "Node.js",
+      "description": "*Node.js* is an open-source, cross-platform, back-end JavaScript runtime environment that executes JavaScript code outside a web browser.",
+      "highlights": [
+        "Commodo elit at imperdiet dui",
+        "Id volutpat lacus laoreet non",
+        "Accumsan lacus vel facilisis"
+      ],
+      "startDate": "2011-08-26",
+      "endDate": "2018-05-12",
+      "url": "https://nodejs.org/",
+      "roles": [
+        "contributor",
+        "evangelist"
       ]
     }
   ],
