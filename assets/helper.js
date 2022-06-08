@@ -34,11 +34,18 @@ const calcDate = (date) => {
 const calcDateRange = (start, end) => {
   const array = []
 
-  if (start) {
-    array.push(beautifyDate(start))
-  }
+  const startDate = calcDate(start)
+  const endDate = calcDate(end)
 
-  array.push(end ? beautifyDate(end) : 'Present')
+  if (startDate && endDate) {
+    array.push(startDate, endDate)
+  } else if (startDate) {
+    array.push(startDate, 'Present')
+  } else if (endDate) {
+    array.push(endDate)
+  } else {
+    return null
+  }
 
   return array.join(' - ')
 }

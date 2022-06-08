@@ -112,12 +112,24 @@ describe('calcDate function', () => {
 })
 
 describe('calcDateRange function', () => {
-  test('given undefined and undefined then return Present', () => {
-    expect(helper.calcDateRange(undefined, undefined)).toBe('Present')
+  test('given null and mull then return null', () => {
+    expect(helper.calcDateRange(null, null)).toBe(null)
+  })
+
+  test('given undefined and undefined then return null', () => {
+    expect(helper.calcDateRange(undefined, undefined)).toBe(null)
+  })
+
+  test('given startDate and null then return startDate - Present', () => {
+    expect(helper.calcDateRange('2019-01-20', null)).toBe('Jan 2019 - Present')
   })
 
   test('given startDate and undefined then return startDate - Present', () => {
     expect(helper.calcDateRange('2019-01-20', undefined)).toBe('Jan 2019 - Present')
+  })
+
+  test('given null and endDate then return endDate', () => {
+    expect(helper.calcDateRange(null, '2020-01-20')).toBe('Jan 2020')
   })
 
   test('given undefined and endDate then return endDate', () => {
