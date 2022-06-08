@@ -27,6 +27,10 @@ const calcLocation = (location) => {
   return array.length > 0 ? array.join(', ') : null
 }
 
+const calcDate = (date) => {
+  return date ? beautifyDate(date) : null
+}
+
 const calcDateRange = (start, end) => {
   const array = []
 
@@ -71,6 +75,7 @@ const validArray = (array) => array !== undefined && array.length > 0
 module.exports = {
   mdToHtml,
   calcLocation,
+  calcDate,
   calcDateRange,
   beautifyDate,
   beautifyArray,

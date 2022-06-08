@@ -93,6 +93,24 @@ describe('calcLocation function', () => {
   })
 })
 
+describe('calcDate function', () => {
+  test('given undefined then return null', () => {
+    expect(helper.calcDate(undefined)).toBe(null)
+  })
+
+  test('given null then return null', () => {
+    expect(helper.calcDate(null)).toBe(null)
+  })
+
+  test('given invalid date then return Invalid date', () => {
+    expect(helper.calcDate('2009-20-222')).toBe('Invalid date')
+  })
+
+  test('given valid date then return date', () => {
+    expect(helper.calcDate('2019-01-20')).toBe('Jan 2019')
+  })
+})
+
 describe('calcDateRange function', () => {
   test('given undefined and undefined then return Present', () => {
     expect(helper.calcDateRange(undefined, undefined)).toBe('Present')
