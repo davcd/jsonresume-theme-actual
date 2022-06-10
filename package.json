@@ -34,8 +34,8 @@
     "gulp": "^4.0.2",
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
-    "html-validate": "^7.1.0",
-    "jest": "^28.1.0",
-    "sass": "^1.52.0"
+    "html-validate": "^7.1.1",
+    "jest": "^28.1.1",
+    "sass": "^1.52.3"
   }
 }
