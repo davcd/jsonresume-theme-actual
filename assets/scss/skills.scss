@@ -13,7 +13,7 @@
 
     .article {
       break-inside: avoid-column;
-      min-width: ($content-width * math.div($content-side-percentage, 100%) - $space-1 -$space-4) * 0.5;
+      min-width: ($content-width * math.div($content-side-percentage, 100%) - $space-1 - $space-4) * 0.5;
       padding-top: $space-2;
 
       span {

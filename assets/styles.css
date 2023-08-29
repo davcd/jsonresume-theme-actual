@@ -20,12 +20,14 @@ p {
   margin: 0;
 }
 
+@media not print {
+  body {
+    margin: 30px 0 50px 0;
+  }
+}
 @page {
   size: A4;
   margin: 15mm 0 20mm 0;
-}
-@page :first {
-  margin-top: 10mm;
 }
 a {
   color: #222222;
@@ -100,6 +102,14 @@ li:first-child {
 
 .padding-container-2 {
   padding: 20px 0;
+}
+
+.padding-top-container-2 {
+  padding-top: 20px;
+}
+
+.padding-bottom-container-2 {
+  padding-bottom: 20px;
 }
 
 .margin-text-1 {
